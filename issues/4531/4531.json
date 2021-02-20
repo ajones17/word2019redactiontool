@@ -1,0 +1,146 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "determined cause of jimcampbell1&#39;s problem &#40;which was external&#41;&#59; never heard back from original issue owner, closing",
+    "ClosedDate": "2009-12-01T10:44:47.727-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I as well as two of my staff recieved an error the first time we tried to install the redaction tool, but second attempt we got no error.",
+    "LastUpdatedDate": "2013-05-16T03:39:36.953-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2009-10-29T08:38:17.99-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error on First Attempt to Install",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4531
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1658,
+      "FileName": "redaction.docx",
+      "DownloadUrl": ".\\1658"
+    },
+    {
+      "FileId": 1715,
+      "FileName": "New Text Document.txt",
+      "DownloadUrl": ".\\1715"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "the second time, did it succeed (i.e. is it working), or did it just silently fail?\r\n\r\nthanks!",
+      "PostedDate": "2009-11-04T17:42:31.763-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "this happened to me, too. The second time looks a silent failure - I don't see the menu.",
+      "PostedDate": "2009-11-11T09:27:03.017-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "can you try to perform the steps listed under Troubleshooting Add-ins Using a Log File and Error Messages here: http://msdn.microsoft.com/en-us/library/ms269003(VS.80).aspx ? Specifically, if you can set the VSTO_SUPPRESSDISPLAYALERTS flag and capture the messages that appear, that should help diagnose the problem.\r\n\r\nThanks!",
+      "PostedDate": "2009-11-12T21:58:45.777-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "See below - I added the variable and copied the following fromt he window that popped up.\r\n\r\nI went looking for the directory it references - it is not there (as teh error indicates).\r\n\r\nThanks--\r\n==========================\r\nName: Word 2007 Redaction Tool\r\nFrom: file:///C:/DOCUME~1/b0159/LOCALS~1/Temp/WZSE0.TMP/Word 2007 Redaction Tool.vsto\r\n\r\nDownloading file:///C:/DOCUME~1/b0159/LOCALS~1/Temp/WZSE0.TMP/Application Files/Word 2007 Redaction Tool_1_1_0_2/Word 2007 Redaction Tool.dll.config.deploy did not succeed.\r\n\r\n************** Exception Text **************\r\nSystem.Deployment.Application.DeploymentDownloadException: Downloading file:///C:/DOCUME~1/b0159/LOCALS~1/Temp/WZSE0.TMP/Application Files/Word 2007 Redaction Tool_1_1_0_2/Word 2007 Redaction Tool.dll.config.deploy did not succeed. ---> System.Net.WebException: Could not find a part of the path 'C:\\Documents and Settings\\b0159\\Local Settings\\Temp\\WZSE0.TMP\\Application Files\\Word 2007 Redaction Tool_1_1_0_2\\Word 2007 Redaction Tool.dll.config.deploy'. ---> System.Net.WebException: Could not find a part of the path 'C:\\Documents and Settings\\b0159\\Local Settings\\Temp\\WZSE0.TMP\\Application Files\\Word 2007 Redaction Tool_1_1_0_2\\Word 2007 Redaction Tool.dll.config.deploy'. ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\\Documents and Settings\\b0159\\Local Settings\\Temp\\WZSE0.TMP\\Application Files\\Word 2007 Redaction Tool_1_1_0_2\\Word 2007 Redaction Tool.dll.config.deploy'.\r\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)\r\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)\r\n   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)\r\n   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)\r\n   --- End of inner exception stack trace ---\r\n   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)\r\n   at System.Net.FileWebRequest.GetResponseCallback(Object state)\r\n   --- End of inner exception stack trace ---\r\n   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)\r\n   at System.Net.FileWebRequest.GetResponse()\r\n   at System.Deployment.Application.SystemNetDownloader.DownloadSingleFile(DownloadQueueItem next)\r\n   --- End of inner exception stack trace ---\r\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.DownloadAddIn(TimeSpan timeout)\r\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.InstallAddIn()",
+      "PostedDate": "2009-11-16T06:17:29.087-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "perfect - that gives us an idea of the problem. if you look in Control Panel's list of installed programs, does the tool show up? If so, can you try uninstalling it, then reinstalling from the web download?",
+      "PostedDate": "2009-11-16T08:51:38.193-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yes, it showed up on teh add/remove programs list.  I uninstalled, and reinstalled from the download (did a Run vs a Save, then run).\r\n\r\nIt installed successfully, but I get a new error when I start Word:\r\n\r\n\"An add-in coudl not be found or could not be loaded\"\r\n\r\nThe detail is attached.",
+      "PostedDate": "2009-11-16T09:47:11.05-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-16T09:47:12.183-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "can you try opening the folder C:\\Documents and Settings\\b0159\\Local Settings\\Apps\\2.0\\1K1L0EYG.AND\\KAXP7M7P.P2K\\word..vsto_0fe767a212f877f9_0001.0001_836ee72be4a7c48a\\ and seeing if (a) it exists, and (b) you have permissions to open it?",
+      "PostedDate": "2009-11-17T07:57:38.203-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "i just noticed there's a .. in there, so that might not be the full path in the logs (you might have to navigate down the directories manually)",
+      "PostedDate": "2009-11-17T07:58:31.613-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It is there and I do have permission to open it.",
+      "PostedDate": "2009-11-17T08:57:33.983-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "thanks for the information - i'm looking into this further; will let you know once I have more ideas on things to try",
+      "PostedDate": "2009-11-18T10:02:40.007-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "two things to try:\r\n1. if you right-click on the actual DLL in that folder, and look at the Security tab, does it say you have Full Control to it?\r\n2. what OS are you on? If it's not Windows 7, can you try to repair the .NET framework?",
+      "PostedDate": "2009-11-18T16:37:57.337-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "actually, after talking to some folks, it looks like you're hitting the issue described here: http://social.msdn.microsoft.com/Forums/en-US/vsto/thread/78d27323-62fe-4011-8c99-47f5feed9fe0\r\n\r\nwhat antivirus software do you have on your machine?",
+      "PostedDate": "2009-11-18T22:20:33.5-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "McAfee Enterprise.  I do see in their log file that this action is being blocked, as described at the link you sent.  Unfortunately, there's no way for me to change the settings to allow an exception.\r\n\r\nThanks for the help!",
+      "PostedDate": "2009-11-19T01:06:49.07-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "happy to help - sorry we weren't able to get it fixed. ",
+      "PostedDate": "2009-11-19T08:57:20.943-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Dana - if you still want to try to troubleshoot your issue, please let me know. Thanks!",
+      "PostedDate": "2009-11-19T08:58:07.277-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-01T10:44:47.727-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:20.29-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:36.953-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

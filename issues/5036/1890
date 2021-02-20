@@ -1,0 +1,119 @@
+The following properties have been set:
+Property: [AdminUser] = true {boolean}
+Property: [ProcessorArchitecture] = AMD64 {string}
+Property: [VersionNT] = 5.1.2 {version}
+Running checks for package 'Windows Installer 3.1', phase BuildList
+The following properties have been set for package 'Windows Installer 3.1':
+Running checks for command 'WindowsInstaller3_1\WindowsInstaller-KB893803-v2-x86.exe'
+Result of running operator 'VersionGreaterThanOrEqualTo' on property 'VersionMsi' and value '3.1': true
+Result of checks for command 'WindowsInstaller3_1\WindowsInstaller-KB893803-v2-x86.exe' is 'Bypass'
+'Windows Installer 3.1' RunCheck result: No Install Needed
+Running checks for package '.NET Framework Client Profile', phase BuildList
+Reading value 'Install' of registry key 'HKLM\SOFTWARE\Microsoft\NET Framework Setup\DotNetClient\v3.5'
+Unable to read registry value
+Not setting value for property 'DotNetFxClient35InstallSuccess'
+The following properties have been set for package '.NET Framework Client Profile':
+Running checks for command 'DotNetFx35Client\DotNetFx35ClientSetup.exe'
+Skipping ByPassIf because Property 'DotNetFxClient35InstallSuccess' was not defined
+Result of running operator 'ValueEqualTo' on property 'AdminUser' and value 'false': false
+Result of running operator 'ValueExists' on property 'Version9x': false
+Result of running operator 'VersionLessThan' on property 'VersionNT' and value '5.1.2': false
+Result of running operator 'VersionEqualTo' on property 'VersionNT' and value '5.2.0': false
+Result of running operator 'ValueEqualTo' on property 'ProcessorArchitecture' and value 'IA64': false
+Result of checks for command 'DotNetFx35Client\DotNetFx35ClientSetup.exe' is 'Install'
+'.NET Framework Client Profile' RunCheck result: Install Needed
+Running checks for package 'Microsoft Office 2007 Primary Interop Assemblies', phase BuildList
+Running external check with command 'C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\Office2007PIARedist\ComponentCheck.exe' and parameters ''
+Process exited with code 1
+Setting value '1 {int}' for property 'PIAInstallAction'
+The following properties have been set for package 'Microsoft Office 2007 Primary Interop Assemblies':
+Property: [PIAInstallAction] = 1 {int}
+Running checks for command 'Office2007PIARedist\o2007pia.msi'
+Result of running operator 'ValueNotEqualTo' on property 'PIAInstallAction' and value '0': true
+Result of checks for command 'Office2007PIARedist\o2007pia.msi' is 'Bypass'
+'Microsoft Office 2007 Primary Interop Assemblies' RunCheck result: No Install Needed
+Running checks for package 'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1', phase BuildList
+Reading value 'Install' of registry key 'HKLM\SOFTWARE\Microsoft\VSTO Runtime Setup\v9.0.21022'
+Read integer value 1
+Setting value '1 {int}' for property 'VSTORuntimeInstalled'
+Reading value 'Update' of registry key 'HKLM\SOFTWARE\Microsoft\VSTO Runtime Setup\v3'
+Unable to read registry value
+Not setting value for property 'VSTORuntimeUpdateInstalled'
+The following properties have been set for package 'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1':
+Property: [VSTORuntimeInstalled] = 1 {int}
+Running checks for command 'VSTOR30\vstor30.exe'
+Result of running operator 'ValueGreaterThanEqualTo' on property 'VSTORuntimeInstalled' and value '1': true
+Result of checks for command 'VSTOR30\vstor30.exe' is 'Bypass'
+Running checks for command 'VSTOR30\vstor30sp1-KB949258-x86.exe'
+Skipping ByPassIf because Property 'VSTORuntimeUpdateInstalled' was not defined
+Result of running operator 'ValueEqualTo' on property 'AdminUser' and value 'false': false
+Result of checks for command 'VSTOR30\vstor30sp1-KB949258-x86.exe' is 'Install'
+'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1' RunCheck result: Install Needed
+EULA for components '.NET Framework Client Profile' was accepted.
+EULA for components 'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1' was accepted.
+Copying files to temporary directory "C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\"
+Downloading files to "C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\"
+(1/7/2010 10:14:23 AM) Downloading 'DotNetFx35Client\DotNetFx35ClientSetup.exe' from 'http://go.microsoft.com/fwlink/?LinkId=119637' to 'C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\'
+Download completed at 1/7/2010 10:14:26 AM
+Verifying file integrity of C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\DotNetFx35Client\DotNetFx35ClientSetup.exe
+WinVerifyTrust returned 0
+File trusted
+(1/7/2010 10:14:26 AM) Downloading 'VSTOR30\vstor30sp1-KB949258-x86.exe' from 'http://go.microsoft.com/fwlink/?LinkId=120187' to 'C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\'
+Download completed at 1/7/2010 10:14:31 AM
+Verifying file integrity of C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\VSTOR30\vstor30sp1-KB949258-x86.exe
+WinVerifyTrust returned 0
+File trusted
+Running checks for package '.NET Framework Client Profile', phase BeforePackage
+Reading value 'Install' of registry key 'HKLM\SOFTWARE\Microsoft\NET Framework Setup\DotNetClient\v3.5'
+Unable to read registry value
+Not setting value for property 'DotNetFxClient35InstallSuccess'
+The following properties have been set for package '.NET Framework Client Profile':
+Running checks for command 'DotNetFx35Client\DotNetFx35ClientSetup.exe'
+Skipping ByPassIf because Property 'DotNetFxClient35InstallSuccess' was not defined
+Result of running operator 'ValueEqualTo' on property 'AdminUser' and value 'false': false
+Result of running operator 'ValueExists' on property 'Version9x': false
+Result of running operator 'VersionLessThan' on property 'VersionNT' and value '5.1.2': false
+Result of running operator 'VersionEqualTo' on property 'VersionNT' and value '5.2.0': false
+Result of running operator 'ValueEqualTo' on property 'ProcessorArchitecture' and value 'IA64': false
+Result of checks for command 'DotNetFx35Client\DotNetFx35ClientSetup.exe' is 'Install'
+'.NET Framework Client Profile' RunCheck result: Install Needed
+Verifying file integrity of C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\DotNetFx35Client\DotNetFx35ClientSetup.exe
+WinVerifyTrust returned 0
+File trusted
+Installing using command 'C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\DotNetFx35Client\DotNetFx35ClientSetup.exe' and parameters ' /lang:enu /passive /norestart'
+Process exited with code 0
+Running checks for package '.NET Framework Client Profile', phase AfterPackage
+Reading value 'Install' of registry key 'HKLM\SOFTWARE\Microsoft\NET Framework Setup\DotNetClient\v3.5'
+Unable to read registry value
+Not setting value for property 'DotNetFxClient35InstallSuccess'
+The following properties have been set for package '.NET Framework Client Profile':
+Running checks for command 'DotNetFx35Client\DotNetFx35ClientSetup.exe'
+Skipping ByPassIf because Property 'DotNetFxClient35InstallSuccess' was not defined
+Result of running operator 'ValueEqualTo' on property 'AdminUser' and value 'false': false
+Result of running operator 'ValueExists' on property 'Version9x': false
+Result of running operator 'VersionLessThan' on property 'VersionNT' and value '5.1.2': false
+Result of running operator 'VersionEqualTo' on property 'VersionNT' and value '5.2.0': false
+Result of running operator 'ValueEqualTo' on property 'ProcessorArchitecture' and value 'IA64': false
+Result of checks for command 'DotNetFx35Client\DotNetFx35ClientSetup.exe' is 'Install'
+'.NET Framework Client Profile' RunCheck result: Unknown
+Running checks for package 'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1', phase BeforePackage
+Reading value 'Install' of registry key 'HKLM\SOFTWARE\Microsoft\VSTO Runtime Setup\v9.0.21022'
+Read integer value 1
+Setting value '1 {int}' for property 'VSTORuntimeInstalled'
+Reading value 'Update' of registry key 'HKLM\SOFTWARE\Microsoft\VSTO Runtime Setup\v3'
+Unable to read registry value
+Not setting value for property 'VSTORuntimeUpdateInstalled'
+The following properties have been set for package 'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1':
+Property: [VSTORuntimeInstalled] = 1 {int}
+Running checks for command 'VSTOR30\vstor30sp1-KB949258-x86.exe'
+Skipping ByPassIf because Property 'VSTORuntimeUpdateInstalled' was not defined
+Result of running operator 'ValueEqualTo' on property 'AdminUser' and value 'false': false
+Result of checks for command 'VSTOR30\vstor30sp1-KB949258-x86.exe' is 'Install'
+'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1' RunCheck result: Install Needed
+Verifying file integrity of C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\VSTOR30\vstor30sp1-KB949258-x86.exe
+WinVerifyTrust returned 0
+File trusted
+Installing using command 'C:\Users\Chris\AppData\Local\Temp\VSDFA14.tmp\VSTOR30\vstor30sp1-KB949258-x86.exe' and parameters ' /q:a /c:"install /q /l"'
+Process exited with code -2147023291
+Status of package '.NET Framework Client Profile' after install is 'InstallUnknown'
+Status of package 'Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1' after install is 'InstallFailed'

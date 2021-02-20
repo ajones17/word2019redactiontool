@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-09-03T22:57:22.993-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Crashes with merged table header.  Sample attached.  Thanks!",
+    "LastUpdatedDate": "2013-05-16T03:39:37.39-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2009-09-03T10:45:47.77-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Crashes with merged table headers",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3913
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1427,
+      "FileName": "Redact error.docx",
+      "DownloadUrl": ".\\1427"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 27784.",
+      "PostedDate": "2009-09-03T22:57:22.993-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:20.877-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:37.39-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

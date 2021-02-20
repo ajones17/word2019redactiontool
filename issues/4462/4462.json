@@ -1,0 +1,81 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "problem resolved - it looks like it was something in the Office install and not the add-in. still investigating seperately.",
+    "ClosedDate": "2009-11-16T08:43:01.74-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Screenshot attached. Tried uninstalling, reinstalling, multiple times.",
+    "LastUpdatedDate": "2013-05-16T03:39:37.253-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2009-10-21T08:48:08.873-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "add-in fails to load",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4462
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1631,
+      "FileName": "redact_error.gif",
+      "DownloadUrl": ".\\1631"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "can you try to perform the steps listed under Troubleshooting Add-ins Using a Log File and Error Messages here: http://msdn.microsoft.com/en-us/library/ms269003(VS.80).aspx ? Specifically, if you can set the VSTO_SUPPRESSDISPLAYALERTS flag and capture the messages that appear, that should help diagnose the problem.\r\n\r\nThanks!",
+      "PostedDate": "2009-11-04T22:54:13.99-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Got it.  Sorry for the delay:\r\n\r\nCould not load file or assembly 'Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c' or one of its dependencies. The system cannot find the file specified.\r\n\r\n\r\n************** Exception Text **************\r\nSystem.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c' or one of its dependencies. The system cannot find the file specified.\r\nFile name: 'Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'\r\n   at Microsoft.VisualStudio.Tools.Office.Word.Internal.IWordHostItemProviderProxy..ctor(IHostItemProviderExtendedContract hostItemProvider)\r\n   at Microsoft.VisualStudio.Tools.Office.Word.Internal.IWordHostItemProviderProxy.GetProxy(IHostItemProviderExtendedContract contract)\r\n   at Microsoft.VisualStudio.Tools.Office.Word.Internal.LocalWordServiceProvider.GetService(Type serviceType)\r\n   at Microsoft.VisualStudio.Tools.Applications.Internal.LocalServiceProvider.System.IServiceProvider.GetService(Type serviceType)\r\n   at Microsoft.VisualStudio.Tools.Office.EntryPointComponentBase.Microsoft.VisualStudio.Tools.Applications.Runtime.IEntryPoint.Initialize(IServiceProvider hostContext)\r\n   at Microsoft.VisualStudio.Tools.Applications.AddInAdapter.ExecutePhase(ExecutionPhases executionPhases)\r\n   at Microsoft.VisualStudio.Tools.Office.Internal.OfficeAddInAdapter.InitializeEntryPointsHelper()\r\n\r\n\r\n\r\n\r\n************** Loaded Assemblies **************\r\nmscorlib\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 2.0.50727.3603 (GDR.050727-3600)\r\n    CodeBase: file:///c:/WINNT/Microsoft.NET/Framework/v2.0.50727/mscorlib.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.Runtime.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.Runtime.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.Runtime.v9.0.dll\r\n----------------------------------------\r\nSystem\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System/2.0.0.0__b77a5c561934e089/System.dll\r\n----------------------------------------\r\nSystem.Core\r\n    Assembly Version: 3.5.0.0\r\n    Win32 Version: 3.5.30729.1 built by: SP\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.Core/3.5.0.0__b77a5c561934e089/System.Core.dll\r\n----------------------------------------\r\nSystem.AddIn\r\n    Assembly Version: 3.5.0.0\r\n    Win32 Version: 3.5.30729.1 built by: SP\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.AddIn/3.5.0.0__b77a5c561934e089/System.AddIn.dll\r\n----------------------------------------\r\nSystem.AddIn.Contract\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 3.5.30729.1 built by: SP\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.AddIn.Contract/2.0.0.0__b03f5f7f11d50a3a/System.AddIn.Contract.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Applications.Hosting.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.Hosting.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.Hosting.v9.0.dll\r\n----------------------------------------\r\nSystem.Xml\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.Xml/2.0.0.0__b77a5c561934e089/System.Xml.dll\r\n----------------------------------------\r\nSystem.Deployment\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.Deployment/2.0.0.0__b03f5f7f11d50a3a/System.Deployment.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Applications.Runtime.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Applications.ServerDocument.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0.dll\r\n----------------------------------------\r\nSystem.Windows.Forms\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.Windows.Forms/2.0.0.0__b77a5c561934e089/System.Windows.Forms.dll\r\n----------------------------------------\r\nSystem.Drawing\r\n    Assembly Version: 2.0.0.0\r\n    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/System.Drawing/2.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.Contract.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.Contract.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.Contract.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.Office.Tools.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.Office.Tools.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.Office.Tools.v9.0.dll\r\n----------------------------------------\r\nWord 2007 Redaction Tool\r\n    Assembly Version: 1.0.0.0\r\n    Win32 Version: 1.0.0.0\r\n    CodeBase: file:///C:/Documents%20and%20Settings/susan_boyle/Local%20Settings/Apps/2.0/9NTE7WK1.X5H/AK08KC5J.NHA/word..vsto_0fe767a212f877f9_0001.0001_fd55c3115462c82d/Word%202007%20Redaction%20Tool.DLL\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.Word.AddInAdapter.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.Word.AddInAdapter.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.Word.AddInAdapter.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.Office.Tools.Common.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.Office.Tools.Common.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.Office.Tools.Common.v9.0.dll\r\n----------------------------------------\r\noffice\r\n    Assembly Version: 12.0.0.0\r\n    Win32 Version: 12.0.6425.1000\r\n    CodeBase: file:///C:/WINNT/assembly/GAC/office/12.0.0.0__71e9bce111e9429c/office.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.AddInAdapter.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.AddInAdapter.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.AddInAdapter.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Applications.AddInAdapter.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.AddInAdapter.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.AddInAdapter.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Applications.Contract.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.21022.123\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.Contract.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.Contract.v9.0.dll\r\n----------------------------------------\r\nAnonymously Hosted DynamicMethods Assembly\r\n    Assembly Version: 0.0.0.0\r\n    Win32 Version: 2.0.50727.3603 (GDR.050727-3600)\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_32/mscorlib/2.0.0.0__b77a5c561934e089/mscorlib.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Applications.Adapter.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.Adapter.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.Adapter.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.Word.HostAdapter.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.Word.HostAdapter.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.Word.HostAdapter.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.HostAdapter.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.HostAdapter.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.HostAdapter.v9.0.dll\r\n----------------------------------------\r\nMicrosoft.VisualStudio.Tools.Office.Word.AddInProxy.v9.0\r\n    Assembly Version: 9.0.0.0\r\n    Win32 Version: 9.0.30729.1\r\n    CodeBase: file:///C:/WINNT/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.Word.AddInProxy.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.Word.AddInProxy.v9.0.dll\r\n----------------------------------------\r\n",
+      "PostedDate": "2009-11-13T12:31:15.517-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "excellent - that helped greatly, and gives us a couple of potential solutions.\r\n\r\n1. Open Control Panel and choose Programs and Features\r\n2. Find the Microsoft Office 2007, right click it and choose the Change option\r\n3. Select the radio button Add or Remove Features and click Continue\r\n4. Under Microsoft Office Word, check whether .NET Programmability Support is set to Run From My Computer or not.\r\n\r\nIf it's not, change it to that and click Continue.\r\nIf it is, then click Back, then choose Repair and click Continue.",
+      "PostedDate": "2009-11-14T23:42:20.62-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "That did it!  It's working now. Thanks!",
+      "PostedDate": "2009-11-16T08:05:34.187-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-16T08:43:01.74-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:20.693-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:37.253-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+Customization could not be loaded because the application domain could not be created.
+
+
+************** Exception Text **************
+Microsoft.VisualStudio.Tools.Applications.Runtime.CannotCreateCustomizationDomainException: Customization could not be loaded because the application domain could not be created. ---> System.IO.FileLoadException: Could not load file or assembly 'Word 2007 Redaction Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=905d580b6266ccd9' or one of its dependencies. Access is denied.
+File name: 'Word 2007 Redaction Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=905d580b6266ccd9' ---> System.IO.FileLoadException: Could not load file or assembly 'file:///C:\Documents and Settings\b0159\Local Settings\Apps\2.0\1K1L0EYG.AND\KAXP7M7P.P2K\word..vsto_0fe767a212f877f9_0001.0001_836ee72be4a7c48a\Word 2007 Redaction Tool.dll' or one of its dependencies. Access is denied.
+File name: 'file:///C:\Documents and Settings\b0159\Local Settings\Apps\2.0\1K1L0EYG.AND\KAXP7M7P.P2K\word..vsto_0fe767a212f877f9_0001.0001_836ee72be4a7c48a\Word 2007 Redaction Tool.dll'
+
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.Assembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, Assembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection)
+   at System.Reflection.Assembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, Assembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection)
+   at System.Reflection.Assembly.InternalLoad(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at System.AddIn.Hosting.ActivationWorker.Activate()
+   at System.AddIn.Hosting.AddInActivator.ActivateInAppDomain[T](AddInToken pipeline, AppDomain domain, AddInControllerImpl controller, Boolean weOwn)
+   at System.AddIn.Hosting.AddInActivator.Activate[T](AddInToken token, AddInEnvironment environment)
+   at System.AddIn.Hosting.AddInToken.Activate[T](AddInEnvironment environment)
+   at Microsoft.VisualStudio.Tools.Office.Runtime.DomainCreator.DomainInitializer.StartAddIn(IntPtr hostServiceProvider, AddInToken addInToken, String assemblyName, String[] entryPoints)
+   at Microsoft.VisualStudio.Tools.Office.Runtime.DomainCreator.DomainInitializer.StartAddIn(IntPtr hostServiceProvider, AddInToken addInToken, String assemblyName, String[] entryPoints)
+   at Microsoft.VisualStudio.Tools.Office.Runtime.DomainCreator.CreateCustomizationDomainInternal(String documentFullLocation, String documentName, String assemblyLocation, Boolean showUIDuringDeployment, IntPtr hostServiceProvider, IntPtr& executor)
+
+
+   --- End of inner exception stack trace ---
+
+
+************** Loaded Assemblies **************
+mscorlib
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50727.3603 (GDR.050727-3600)
+    CodeBase: file:///C:/WINDOWS/Microsoft.NET/Framework/v2.0.50727/mscorlib.dll
+----------------------------------------
+Microsoft.VisualStudio.Tools.Office.Runtime.v9.0
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.30729.1
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Office.Runtime.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Office.Runtime.v9.0.dll
+----------------------------------------
+System
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System/2.0.0.0__b77a5c561934e089/System.dll
+----------------------------------------
+System.Core
+    Assembly Version: 3.5.0.0
+    Win32 Version: 3.5.30729.1 built by: SP
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Core/3.5.0.0__b77a5c561934e089/System.Core.dll
+----------------------------------------
+System.AddIn
+    Assembly Version: 3.5.0.0
+    Win32 Version: 3.5.30729.1 built by: SP
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.AddIn/3.5.0.0__b77a5c561934e089/System.AddIn.dll
+----------------------------------------
+Microsoft.VisualStudio.Tools.Applications.Hosting.v9.0
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.30729.1
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.Hosting.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.Hosting.v9.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.30729.1
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.30729.1
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll
+----------------------------------------
+System.Windows.Forms
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Windows.Forms/2.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+----------------------------------------
+System.Drawing
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Drawing/2.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+----------------------------------------
+System.Xml
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Xml/2.0.0.0__b77a5c561934e089/System.Xml.dll
+----------------------------------------
+System.Deployment
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50727.3053 (netfxsp.050727-3000)
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Deployment/2.0.0.0__b03f5f7f11d50a3a/System.Deployment.dll
+----------------------------------------
+System.AddIn.Contract
+    Assembly Version: 2.0.0.0
+    Win32 Version: 3.5.30729.1 built by: SP
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.AddIn.Contract/2.0.0.0__b03f5f7f11d50a3a/System.AddIn.Contract.dll
+----------------------------------------

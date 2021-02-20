@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-09-15T17:34:19.957-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In SetViewProperties, we need to use Window.View.SplitSpecial to move the focus to the appropriate pane in order to navigate into stories other than the built-in one. Also need to save/restore the Panes collection.",
+    "LastUpdatedDate": "2017-12-07T14:05:40.64-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2008-09-09T22:17:59.1-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Navigation in Web Layout View",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 29
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 919.",
+      "PostedDate": "2008-09-15T17:34:19.957-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:22.313-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:38.247-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-07T14:05:40.64-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

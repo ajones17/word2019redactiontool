@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-08-31T22:51:36.273-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Apologize for cross posting (also in discussions), not sure where it belongs...\n \nLove the tool!  One minor problem, if there is a picture in the document header then the redaction tool will hang up at the end of the process.  While it took a while to figure out what was happening, it is easy to work around - delete the picture from your header before \"Redact document\", then when the new document is complete simply go in and add back the picture.  Hopefully they can fix the bug but if not still an amazing tool!  Much mahalo (many thanks), Damon",
+    "LastUpdatedDate": "2013-05-16T03:39:37.667-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2009-08-22T09:04:55.49-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Crashes when redacting a document with a picture in the header",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3807
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "thanks for the report! i'll take a look at it - can you provide some more details to help narrow it down?\r\n- is the picture in line with text or floating?\r\n- is the picture the only thing in the header?\r\n- if not, is it the first thing in the header?\r\n\r\nthanks again!",
+      "PostedDate": "2009-08-25T00:28:37.57-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 27588.",
+      "PostedDate": "2009-08-31T22:51:36.273-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "will be fixed in v1.1",
+      "PostedDate": "2009-08-31T22:53:44.03-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:21.267-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:37.667-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

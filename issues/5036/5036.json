@@ -1,0 +1,101 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "no reply for 3 months&#59; closing",
+    "ClosedDate": "2010-04-04T19:28:11.977-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "After attempting to install the word2007redactiontool from the application setup file I get the following detailed error report:  I have both  .NET Framework 3.5 Service Pack 1 and VSTO version 3 Service Pack 1 already installed on computer running windows 7 64 bit with office professional 2007.\n \nName: \nFrom: file:///C:/Users/Chris/AppData/Local/Temp/WZSE0.TMP/Word 2007 Redaction Tool.vsto\n \nSpecified argument was out of the range of valid values.\nParameter name: entryValue\n \n************** Exception Text **************\nSystem.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.\nParameter name: entryValue\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.RegistryStore.Retrieve(String entryName, Object entryValue, CompareDelegate compareMethod)\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.MetadataStore.UpdateLastCheckedTime(String subscriptionID, DateTime newLastCheckedTime)\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.InstallAddIn()",
+    "LastUpdatedDate": "2013-05-16T03:39:36.8-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2010-01-05T06:39:44.617-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Installation Error when both .net and visual studio office tools installed",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5036
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1890,
+      "FileName": "install.log",
+      "DownloadUrl": ".\\1890"
+    },
+    {
+      "FileId": 1892,
+      "FileName": "install.log",
+      "DownloadUrl": ".\\1892"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Can you try uninstalling/reinstalling? According to the few threads of this I found on bing, this appears to be the known solution.",
+      "PostedDate": "2010-01-06T00:16:40.423-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have uninstalled both the .net and visual studio office tools, and then tried to install the redaction tool and now I get this error:\r\n\r\nComponent Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 has failed to install with the following error message:\r\n\"This action is only valid for products that are currently installed. \"\r\n\r\nThe following components were successfully installed:\r\n- .NET Framework Client Profile\r\n\r\nThe following components failed to install:\r\n- Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1\r\n\r\nSee the setup log file located at 'C:\\Users\\Chris\\AppData\\Local\\Temp\\VSDFA14.tmp\\install.log' for more information.\r\n\r\nI have attached the install.log file.\r\n\r\nI'm going to delete the temp directory, restart and try again.... ",
+      "PostedDate": "2010-01-07T09:18:04.33-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-01-07T09:18:05.363-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Interesting - it looks like it thinks the runtime isn't uninstalled yet - can you try rebooting?",
+      "PostedDate": "2010-01-07T16:40:12.073-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I uninstalled .net, visual studio office tools, then I cleaned the temp, then I rebooted, then I reinstalled.  I watched it download the .net sucessfully and install that, everything was ok.  Then when it installed the visual studio office tools it got about halfway though it stopped and produced this error:\r\n\r\nComponent Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 has failed to install with the following error message:\r\n\"This action is only valid for products that are currently installed. \"\r\n\r\nThe following components were successfully installed:\r\n- .NET Framework Client Profile\r\n\r\nThe following components failed to install:\r\n- Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1\r\n\r\nSee the setup log file located at 'C:\\Users\\Chris\\AppData\\Local\\Temp\\VSD6A29.tmp\\install.log' for more information.\r\n\r\nLog file attached again.\r\n\r\nI installed this on a fresh install of windows 7 64 bit with office 2007 successfully.. not sure why this is happening on this machine but this is the machine I need to use it on!!!!",
+      "PostedDate": "2010-01-07T20:19:49.59-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-01-07T20:19:50.323-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "were you able to resolve this?\r\n\r\nif not, can you see if installing the runtime directly (from here: http://www.microsoft.com/downloads/details.aspx?familyid=D8EB4921-891A-4B5E-973F-0B96E6CCF376&displaylang=en) succeeds?",
+      "PostedDate": "2010-01-27T08:48:23.457-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-04-04T19:28:11.977-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:20.11-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:36.8-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

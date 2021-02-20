@@ -1,0 +1,76 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This follows a discussion thread  on the redaction bulletin board ;\nThe attached document was created at the request of tristand",
+    "LastUpdatedDate": "2013-02-21T15:40:19.85-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2010-01-06T09:02:53.023-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Marking text works ok, I'm getting error when redacting",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5053
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1885,
+      "FileName": "Email with Register keys-Dec29-2009.docx",
+      "DownloadUrl": ".\\1885"
+    },
+    {
+      "FileId": 1893,
+      "FileName": "Email with Register keys-Dec29-2009.docx",
+      "DownloadUrl": ".\\1893"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Added the \"email when someone comments\" checkbox",
+      "PostedDate": "2010-01-06T09:03:51.713-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "For the last 3 screenshots, can you extend them so we can see the key values (the pane on the right side)? Thanks!",
+      "PostedDate": "2010-01-07T16:42:41.367-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here's a revised document with the expanded key values - as requested by tristand ",
+      "PostedDate": "2010-01-08T08:26:49.96-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-01-08T08:26:51.11-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:19.85-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

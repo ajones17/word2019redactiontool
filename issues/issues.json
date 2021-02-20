@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 29,
+    "Title": "Navigation in Web Layout View"
+  },
+  {
+    "Id": 110,
+    "Title": "Proofing Errors on Redacted Text"
+  },
+  {
+    "Id": 359,
+    "Title": "Focus after Redaction"
+  },
+  {
+    "Id": 360,
+    "Title": "Find and Mark"
+  },
+  {
+    "Id": 3807,
+    "Title": "Crashes when redacting a document with a picture in the header"
+  },
+  {
+    "Id": 3849,
+    "Title": "Word 2007 Redaction \"Find and Mark\" ignores header/footer"
+  },
+  {
+    "Id": 3913,
+    "Title": "Crashes with merged table headers"
+  },
+  {
+    "Id": 4462,
+    "Title": "add-in fails to load"
+  },
+  {
+    "Id": 4530,
+    "Title": "Error on First Attempt to Install"
+  },
+  {
+    "Id": 4531,
+    "Title": "Error on First Attempt to Install"
+  },
+  {
+    "Id": 5036,
+    "Title": "Installation Error when both .net and visual studio office tools installed"
+  },
+  {
+    "Id": 5053,
+    "Title": "Marking text works ok, I'm getting error when redacting"
+  },
+  {
+    "Id": 5819,
+    "Title": "line spacing"
+  },
+  {
+    "Id": 5862,
+    "Title": "redaction can fail if fields are redacted"
+  },
+  {
+    "Id": 13299,
+    "Title": "Installation Issue"
+  }
+]

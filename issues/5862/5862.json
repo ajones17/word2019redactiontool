@@ -1,0 +1,81 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "closing as the issue is resolved in 1.2",
+    "ClosedDate": "2010-05-19T22:33:25.897-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "attached document fails to redact - redacted fields are creating illegal replacement ranges",
+    "LastUpdatedDate": "2013-05-16T03:39:36.117-07:00",
+    "PlannedForRelease": "Version 1.2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "redaction",
+    "ReportedDate": "2010-04-05T21:28:32.227-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "redaction can fail if fields are redacted",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5862
+  },
+  "FileAttachments": [
+    {
+      "FileId": 2112,
+      "FileName": "redaction error.doc",
+      "DownloadUrl": ".\\2112"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 46704.",
+      "PostedDate": "2010-04-07T09:28:15.053-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Chet, please download 1.2 (it's under \"Planned\" on the releases tab), and see if this fixes your cases. In my testing, it appears to work, so I'm ready for you to review as well. Thanks!",
+      "PostedDate": "2010-04-07T09:30:14.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "** Closed by tristand 4/7/2010 9:28 AM",
+      "PostedDate": "2010-04-07T13:17:40.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "leaving open until we confirm the fix",
+      "PostedDate": "2010-04-07T13:17:40.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-05-19T22:33:25.897-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:40:19.02-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:39:36.117-07:00",
+      "Id": -2147483648
+    }
+  ]
+}
