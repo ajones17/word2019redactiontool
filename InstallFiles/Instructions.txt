@@ -1,0 +1,9 @@
+Word 2019 Redaction Tool
+
+This is Microsoft's Word 2007 Redaction Tool which has been modified to run in newer 64-bit versions of Microsoft Word such as Word 2016 and 2019.
+
+As part of my MSc research I tested the redaction and found it leaves no trace of original text or images in the document.  The only hint at previous content is the fact that text redaction inserts an equal number of black boxes as the number of characters redacted so you can work out how long the word(s) length.
+
+To install, extract the zip file and place the folder in a location where Microsoft Office will have access to it (e.g. the machine's C: drive).  Run setup.exe and the add-in will be installed, you will now see a new 'Redact' group on the Review ribbon when you run Microsoft Word.
+
+To remove the add-in, simply uninstall Word2007RedactionTool from Add/Remove programs.
