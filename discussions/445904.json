@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1052475",
+    "ThreadId": "445904",
+    "Html": "Hi All,<br />\n<br />\n  I have downloaded the Word 2007/2010 Redaction tool plug in my word 2007.It is working fine with Manually. Actually, i have manipulating Word 2007/2010 documents in C# through the help of Open XML SDK 2.0(Add,delete,Upate Word paragraphs) successfully.<br />\n<br />\nNow i want to do the redaction work programatically in C#.I dont know is it possible with this redaction tool( as i mentioned, i installed this plugin) or not.<br />\n<br />\nCan i access and do the functionalities of this plug through C# code?<br />\n<br />\nI dont think, it is not possible with Open XML SDK 2.0...<br />\n<br />\nPlease Guide me to get clear idea about this and also suggest your ways to proceed the approach towards Automatic Redaction through C# Code...<br />\n",
+    "PostedDate": "2013-06-03T23:26:11.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1052534",
+    "ThreadId": "445904",
+    "Html": "This tool isn't designed for automation scenarios (it's an add-in to the client app designed to be run by a user directly), but it's certainly possible to do something similar via the Open XML SDK - you would just need to do the &quot;mark&quot; phase in Word, then use the SDK to find those marked runs and redact their contents.<br />\n",
+    "PostedDate": "2013-06-04T02:46:19.05-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1052933",
+    "ThreadId": "445904",
+    "Html": "Thanks a lot Tristand... Could you pass some links for open xml sdk redact work, if possible?<br />\n",
+    "PostedDate": "2013-06-04T23:24:03.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1053134",
+    "ThreadId": "445904",
+    "Html": "I don't know of any examples that already exist, unfortunately - you would be blazing a new trail here. :)<br />\n",
+    "PostedDate": "2013-06-05T07:57:52.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1246793",
+    "ThreadId": "445904",
+    "Html": "I'm tried <a href=\"http://www.yiigo.com/guides/vbnet/how-to-draw-on-word.shtml\" rel=\"nofollow\">Word redaction with VB.NET</a>, so this should be able to work with C# as well. You can check out the guide and find a VB.NET to C# converter and have a try.<br />\n<br />\nRegards,<br />\nGabrielle<br />\n",
+    "PostedDate": "2014-05-18T20:05:24.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

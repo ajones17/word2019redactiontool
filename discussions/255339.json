@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "603119",
+    "ThreadId": "255339",
+    "Html": "<p>Not sure why but when I go to run the installer for the Redaction Tool it tells me that it's installing Microsoft Virtual PC 2007.&nbsp; Any idea what's up with that?</p>\n<p>Running Office 2010 64-bit on Windows 7 64-bit.</p>",
+    "PostedDate": "2011-04-26T12:00:05.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "603669",
+    "ThreadId": "255339",
+    "Html": "<p>None - I'm guessing it means your Windows Installer state is corrupted somehow (all of the setup&nbsp;work is standard Windows Installer). If you let it complete, does it actually do anything? You might try doing that, then running it again?</p>",
+    "PostedDate": "2011-04-27T09:29:53.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

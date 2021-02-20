@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "825024",
+    "ThreadId": "352598",
+    "Html": "\r\n<p>Hi there!</p>\r\n<p>We would like to install the Word 2007 Redaction Tool on all our client workstations (Windows 7/Office 2010) using a command line in a batch job.&nbsp; Is that possible?&nbsp; If so, what would the command syntax be?&nbsp;</p>\r\n<p>Thanks very much.</p>\r\n<p>C.</p>\r\n",
+    "PostedDate": "2012-04-17T12:31:28.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "825604",
+    "ThreadId": "352598",
+    "Html": "<p>The add-in is a standard VSTO 2010 project, so I believe it should be possible, though you'd likely need to compile the project to set it up.</p>\r\n<p>I haven't done it, but what should work is:</p>\r\n<ul>\r\n<li>Recompile the project</li>\r\n<li>Grab the MSI</li>\r\n<li>Create a script to install it unattended to some location </li>\r\n<li>use the vstoinstaller EXE (<a href=\"http://msdn.microsoft.com/en-us/library/bb772078.aspx\">http://msdn.microsoft.com/en-us/library/bb772078.aspx</a>) to hook it up to Wor</li>\r\n</ul>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-04-18T11:59:49.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "825934",
+    "ThreadId": "352598",
+    "Html": "<p>Thanks tristand.&nbsp; I must admit to being in a bit&nbsp;over my head here, but I'll follow your instructions and see what I can do.</p>\r\n<p>Thanks again!</p>\r\n<p>C.</p>",
+    "PostedDate": "2012-04-19T06:35:20.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "826648",
+    "ThreadId": "352598",
+    "Html": "<p>Okay, I've followed the instructions at <a href=\"http://msdn.microsoft.com/en-us/library/bb772078.aspx\">http://msdn.microsoft.com/en-us/library/bb772078.aspx</a>&nbsp;to&nbsp;run the vstoinstaller.exe.&nbsp;&nbsp;Running it interactively is fine.&nbsp; Since the publisher can't be verified, a prompt is displayed warning us of this and gives us the option to \"Install\" or \"Don't Install\".&nbsp; Clicking on \"Install\" installs it perfectly.&nbsp; However, we want to deploy this to 100+ workstations by running it from a command line and so, we need to run it in silent mode.&nbsp; I tried doing just that, but because the publisher can't be verified, the default action for the prompt (which is what silent mode will take) is \"Don't Install\", so it does not get installed in silent mode.&nbsp; If I run it from the command line without silent mode, the prompt is displayed and I can then click on \"Install\" to install it.</p>\r\n<p>You mentioned grabbing the MSI file, which is what our tech folks really want, but I can't find one in the downloaded source code -- just the VSTO file.&nbsp; Is there any way to get or make an MSI file for this?</p>\r\n<p>Thanks again.</p>\r\n<p>C.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-04-20T12:14:02.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "826972",
+    "ThreadId": "352598",
+    "Html": "<p>Setup isn't my area of expertise, but I believe that because it's a VSTO solution, you'll ultimately need to use VSTOInstaller to get the solution set up on the machines correctly.</p>\r\n<p>What I think you'll need to do is recompile the source code for yourselves using Visual Studio to sign the project with a certificate that's trusted by the PCs in your organization, and then deploy that version using the method in the MSDN article. I'm not aware of any other way to get around&nbsp;the requirement around the&nbsp;signature in an unattended install.&nbsp;</p>",
+    "PostedDate": "2012-04-21T22:37:08.74-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "827310",
+    "ThreadId": "352598",
+    "Html": "<p>That's&nbsp;kind of what I thought.&nbsp; I was hoping to avoid the whole certificate thing, but I guess that's just the way it is now.&nbsp; Thanks for all your help, tristand.&nbsp; Much appreciated.</p>\r\n<p>&nbsp;</p>\r\n<p>C.</p>",
+    "PostedDate": "2012-04-23T06:23:25.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

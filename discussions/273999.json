@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "677228",
+    "ThreadId": "273999",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>My name's Arthur. I've been using your plugin for Ms-Word (2007), and besides it working well. I seem to have encountered a problem whilst using the redaction tool. Is the any possible way to search for multiple Words at once? This because I'm looking to\r\n use it to filter out mostly swear words and negative language.</p>\r\n<p>I'd really appreciate the assistance, if any possible</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2011-09-27T09:13:11.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "677769",
+    "ThreadId": "273999",
+    "Html": "<p>Thanks for the feedback - I'm glad it's working well for you!</p>\r\n<p>Unfortunately, right now you can only search for one word at a time - we're using Word's built in find and replace, so we're limited to single find/replace actions. Great suggestion though for future consideration.</p>",
+    "PostedDate": "2011-09-28T09:27:39.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

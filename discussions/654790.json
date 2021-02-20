@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1473843",
+    "ThreadId": "654790",
+    "Html": "After installation of the Tool no buttons appear on ribbon. Also at Option-&gt;Addons-&gt;COM-Add-Ins there is an information about some runtime error while loading (&quot;Laufzeitfehler während des Ladens&quot; in my German MS Office).\r<br />\n<img src=\"http://i.imgur.com/NoaspMp.png\" alt=\"Image\" />\r<br />\n<br />\nI am using an admin account, I have tried to turn off my antivirus and to reinstall both  .NET Framework 3.5 Service Pack 1 and VSTO 3.0 Runtime Service Pack 1 downloaded from Microsoft Webpage, but it didn't help. Do you have any clues what to do?<br />\n",
+    "PostedDate": "2016-05-18T09:19:45.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

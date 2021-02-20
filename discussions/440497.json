@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1031296",
+    "ThreadId": "440497",
+    "Html": "Hello,\r<br />\n<br />\nTool was installed previously and worked fine. Received new computer and had system reinstalled by IT Dept. When I use Word the tool is not there or available. It isn't listed under Options (Add-Ins or Disabled) either. I can't find it under installed programs on Control Panel. When I try to install tool receive popup stating tool is installed and located under the IT Administrator AppData Files. When I go to the folder indicated the file isn't there. I search the entire file system for file and it can't be found. The text of the error window is below. The User (BESERV) is the IT Administrator acct. Thanks for your help.\r<br />\n<br />\nName: \r<br />\nFrom: file:///C:/Users/BESERV~1/AppData/Local/Temp/WZSE2.TMP/Word 2007 Redaction Tool.vsto\r<br />\n<br />\n************** Exception Text **************\r<br />\nMicrosoft.VisualStudio.Tools.Applications.Deployment.AddInAlreadyInstalledException: The customization cannot be installed because another version is currently installed and cannot be upgraded from this location. To install this version of the customization, first use Add or Remove Programs to uninstall this program: Word 2007 Redaction Tool. Then install the new customization from the following location: file:///C:/Users/BESERV~1/AppData/Local/Temp/WZSE2.TMP/Word 2007 Redaction Tool.vsto\r<br />\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.VerifySolutionCodebaseIsUnchanged(Uri uri, String subscriptionId, Boolean previouslyInstalled)\r<br />\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.InstallAddIn()<br />\n",
+    "PostedDate": "2013-04-16T10:47:10.507-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1040135",
+    "ThreadId": "440497",
+    "Html": "Hi,\r<br />\n<br />\nWhat's the content of the HKEY_CURRENT_USER\\Software\\Microsoft\\VSTA\\Solutions\\ registry key on that machine? Is there a subkey with a value in it whose URL matches the Redaction Tool install location?<br />\n",
+    "PostedDate": "2013-05-06T15:49:07.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1040446",
+    "ThreadId": "440497",
+    "Html": "\r\n<div dir=\"ltr\"><font color=\"#000080\"><font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\"><font color=\"#000080\"><font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\">Hello,</font></font></font></font><br>\r\n<font color=\"#0000ff\" size=\"4\" face=\"Times New Roman\"></font><br>\r\n<font color=\"#0000ff\" size=\"4\" face=\"Times New Roman\">I was able to solve the issue by having out IT Dept login as administrator and uninstall from that user profile. Once complete I logged in and reinstalled. This solved the problem.\r\n</font><br>\r\n<font color=\"#000080\"><font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\"><font color=\"#000080\"><font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\"></font></font></font></font><br>\r\n<font color=\"#000080\"><font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\"><font color=\"#000080\"><font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\">Regards,</font><br>\r\n<font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\">Chris Miller</font><br>\r\n<font color=\"#0000ff\" size=\"4\" face=\"Times New Roman, Times, Serif\"></font></font></font></font><br>\r\n<div>\r\n<hr id=\"stopSpelling\">\r\n</div>\r\n</div>\r\n",
+    "PostedDate": "2013-05-07T08:44:43.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

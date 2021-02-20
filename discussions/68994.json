@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "234747",
+    "ThreadId": "68994",
+    "Html": "<p>Hi,</p>\r\n<p>&nbsp;</p>\r\n<p>When i try to access code for redaction tool project ..i was unable to build it...since file Word2007RedactionTool_TemporaryKey.pfx requires the password .</p>\r\n<p>Can please let me know what is password for this file</p>\r\n<p>&nbsp;</p>\r\n<p>thanks in advance</p>",
+    "PostedDate": "2009-09-15T08:11:07.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "235025",
+    "ThreadId": "68994",
+    "Html": "<p>it should be blank - it's just a dummy pfx so that the clickonce manifest is signed, but not automatically trusted by anyone</p>",
+    "PostedDate": "2009-09-16T00:14:22.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

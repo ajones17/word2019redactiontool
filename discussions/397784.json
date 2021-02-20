@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "920863",
+    "ThreadId": "397784",
+    "Html": "\r\n<p>I am attempting to download the 2007 Redaction Add-in that is supposed to be compatible with 2010. So far I haven't been able to get any download to start.</p>\r\n<p>I accidentally clicked on a download for a Free Download Manager and quickly canceled that. I do not want to install any extra junk, I'm just trying to install this single, simple add-in.</p>\r\n<p>Please provide instructions for downloading and installing this add-in with Word 2010.</p>\r\n",
+    "PostedDate": "2012-10-02T13:59:15.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1236073",
+    "ThreadId": "397784",
+    "Html": "Yes, the same thing happened when I tried to download. Then I turned to this guide for <a href=\"http://www.yiigo.com/guides/vbnet/how-to-word-annotate.shtml\" rel=\"nofollow\">Word Redaction</a>, looks promising enough for me. :)\r<br />\n<br />\nBest regards,\r<br />\nDerek<br />\n",
+    "PostedDate": "2014-04-21T01:56:03.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1241399",
+    "ThreadId": "397784",
+    "Html": "<a href=\"https://redaction.codeplex.com/\" rel=\"nofollow\">Word 2007/2010 Redaction Tool - </a><a href=\"http://www.rasteredge.com/how-to/csharp-imaging/word-annotating/\" rel=\"nofollow\">Word Annotation</a>\r<br />\n<br />\nDirectly download this add-in from <a href=\"https://redaction.codeplex.com/releases/view/43169\" rel=\"nofollow\">Downloads</a> part.<br />\n",
+    "PostedDate": "2014-05-04T23:18:37.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

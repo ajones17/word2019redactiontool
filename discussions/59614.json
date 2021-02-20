@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "201830",
+    "ThreadId": "59614",
+    "Html": "<p>Doesn't work on my machine.&nbsp; Invoking &quot;Redact&quot; (either via drop-down from Redact box on Review toolbar or via Redact on Preview menu) creates a new document which is never displayed.&nbsp; The &quot;Proofing document ...&quot; animated icon in the status bar (? - at the bottom of the Word window, anyway) never stops being animated.&nbsp; The main document has also become invisible, too -- until closed &amp; re-opened.&nbsp; I'd give you the Word version &amp; build info, but I don't know what has become of &quot;Help/About&quot; in Word 2007.</p>",
+    "PostedDate": "2009-06-15T18:52:53.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

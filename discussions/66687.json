@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "226679",
+    "ThreadId": "66687",
+    "Html": "<p>Love the tool!&nbsp; One minor problem, if there is a picture in the document header then the redaction tool will hang up at the end of the process.&nbsp; While it took a while to figure out what was happening, it is easy to work around - delete the picture from your header before &quot;Redact document&quot;, then when the new document is complete simply go in and add back the picture.&nbsp; Hopefully they can fix the bug but if not still an amazing tool!&nbsp; Much mahalo (many thanks), Damon</p>",
+    "PostedDate": "2009-08-22T09:02:05.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "228990",
+    "ThreadId": "66687",
+    "Html": "<p>Great catch! I believe I have a fix for this - I'll compile and post a 1.1 beta&nbsp;version this weekend that should address it.</p>",
+    "PostedDate": "2009-08-29T09:52:55.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "229009",
+    "ThreadId": "66687",
+    "Html": "Tristan,<br><br>I also found that it struggled if I redacted merged cells in a table and/or table headers - when I took the merged header out of the redaction then it worked fine.<br><br>Many thanks for the quick work on the new beta!<br>Damon<br><br><hr>From: [email removed]<br>To: [email removed]<br>Date: Sat, 29 Aug 2009 09:52:57 -0700<br>Subject: Re: Crashes with picture in document header [redaction:66687]<br><br>\r\n\r\n From: tristand<br> <div id=\"EC_ThreadNotificationPostBody\">Great catch! I believe I have a fix for this - I'll compile and post a 1.1 beta version this weekend that should address it.<br></div>   ",
+    "PostedDate": "2009-08-29T13:22:37.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "229128",
+    "ThreadId": "66687",
+    "Html": "<p>interesting - is this problem also in headers? does the redaction fail, hang, or just take a long time? would you be able to provide a sample file with dummy content that experiences this (I can't reproduce it)?</p>",
+    "PostedDate": "2009-08-30T11:25:41.343-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "229173",
+    "ThreadId": "66687",
+    "Html": "\r\nFinally replicated.  In this file when I run it I get a generic error message &quot;an error was encountered while redacting this document&quot;.  I ran it several times with no problem testing various things (table going across pages, etc...); error did not happen until I merged the box in the header.<br><br>The tool rocks, saved me some serious time over the past week!<br><br><br><br><table style=\"border-top:1px solid black;font-weight:bold;font-family:'Segoe UI',Tahoma,san-serif\"><tbody><tr><td><a href=\"http://im.live.com/Messenger/IM/Home/?source=EML_WLHM_GreaterGood\" style=\"font-size:9pt;color:rgb(1, 132, 203);text-decoration:none\"><img style=\"border-style:none\" src=\"http://gfx1.hotmail.com/mail/w3/ltr/i_charity.gif\" alt=\"i'm\"> EMAILING FOR THE GREATER GOOD<br><span style=\"padding:0px 24px;font-size:8pt;color:rgb(63, 181, 85);text-decoration:underline\">Join me</span></a></td></tr></tbody></table><br><br><hr id=stopSpelling>From: [email removed]<br>To: [email removed]<br>Date: Sun, 30 Aug 2009 11:25:42 -0700<br>Subject: Re: Crashes with picture in document header [redaction:66687]<br><br>\r\n\r\n From: tristand<br> <div id=\"EC_ThreadNotificationPostBody\">interesting - is this problem also in headers? does the redaction fail, hang, or just take a long time? would you be able to provide a sample file with dummy content that experiences this (I can't reproduce it)?<br></div> ",
+    "PostedDate": "2009-08-30T16:50:22.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "229587",
+    "ThreadId": "66687",
+    "Html": "<p>I've uploaded a beta version of v1.1 that fixes the issue you reported with pictures (thanks again). If you do&nbsp;have a test document (not your main one obviously, since I'm sure that has personal information)&nbsp;that demonstrates the table issue, I'd love to see if I can fix that one as well before declaring 1.1 final.</p>\r\n<p>1.1 is here: <a href=\"http://redaction.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=32251\">http://redaction.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=32251</a></p>\r\n<p>Thanks again!</p>",
+    "PostedDate": "2009-08-31T23:02:10.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230388",
+    "ThreadId": "66687",
+    "Html": "\r\nSorry for the delay, here is the file.  :)<br>\r\n <br>\r\n<br><br><br><br><br><br> <br>\r\n\r\n<table style=\"font-family:'Segoe UI',Tahoma,san-serif;border-top:black 1px solid;font-weight:bold\">\r\n<tbody>\r\n<tr>\r\n<td><a style=\"color:#0184cb;font-size:9pt;text-decoration:none\" href=\"http://im.live.com/Messenger/IM/Home/?source=EML_WLHM_GreaterGood\"><img style=\"border-bottom-style:none;border-right-style:none;border-top-style:none;border-left-style:none\" alt=\"i'm\" src=\"http://gfx1.hotmail.com/mail/w3/ltr/i_charity.gif\"> EMAILING FOR THE GREATER GOOD<br><span style=\"padding-bottom:0px;padding-left:24px;padding-right:24px;color:#3fb555;font-size:8pt;text-decoration:underline;padding-top:0px\">Join me</span></a></td></tr></tbody></table><br>\r\n<br> <br>\r\n<hr id=stopSpelling>\r\nFrom: [email removed]<br>To: [email removed]<br>Date: Mon, 31 Aug 2009 23:02:18 -0700<br>Subject: Re: Crashes with picture in document header [redaction:66687]<br><br>\r\n\r\n\r\nFrom: tristand<br>\r\n<div id=\"EC_ThreadNotificationPostBody\">\r\nI've uploaded a beta version of v1.1 that fixes the issue you reported with pictures (thanks again). If you do have a test document (not your main one obviously, since I'm sure that has personal information) that demonstrates the table issue, I'd love to see if I can fix that one as well before declaring 1.1 final.<br>\r\nThanks again!<br></div>\r\n",
+    "PostedDate": "2009-09-02T12:57:06.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230746",
+    "ThreadId": "66687",
+    "Html": "<p>It looks like the attachment is getting lost somewhere along the way - would you mind creating a new bug on the Issue Tracker page and using the attachment field there to attach it? Thanks!</p>",
+    "PostedDate": "2009-09-03T09:41:28.343-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "232486",
+    "ThreadId": "66687",
+    "Html": "<p>Bug's fixed (was out of town for the weekend) - will post an updated v1.1 tomorrow.</p>\r\n<p>Thanks again for the report!</p>",
+    "PostedDate": "2009-09-08T19:39:03.693-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

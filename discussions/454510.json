@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1084812",
+    "ThreadId": "454510",
+    "Html": "Hello,\r<br />\n<br />\nI'm using a 2013 version of MS Word and this tool perfectly works with small sized doc files.\r<br />\nI'm trying to work with a 50MB file which has more than 200 pages and a bunch of pictures, and marking works but when I try to redact document, the Word program shuts down.\r<br />\nAre there any solution to this problem?<br />\n",
+    "PostedDate": "2013-08-26T01:15:49.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1085260",
+    "ThreadId": "454510",
+    "Html": "Yikes - that's unfortunate. Are you familiar enough with VBA to try to see if ActiveDocument.WordOpenXML works on that large file? That's how I clone the file, and I'm wondering if that's failing somehow..<br />\n",
+    "PostedDate": "2013-08-27T00:30:59.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

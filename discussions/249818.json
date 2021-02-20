@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "580893",
+    "ThreadId": "249818",
+    "Html": "\r\n<p>I cannot install the Word 2007 Redaction Tool on my system. I'm running Windows 7 (32bit) with Office 2010 installed. The installation fails when it tries to install the Office System 3.0 runtime components. I've downloaded the .NET Framework verification\r\n tool to verify my .NET Framework, that checks out find. I've downloaded the VSTO 3.0 runtime and have tried to run it separately, and it fails. I do not know that exact cause of the failure other than the error status: 1603. The VSTO 3.0 runtime installation\r\n failure is preventing the installation of the Word 2007 Redaction Tool.</p>\r\n<p>&#65279;&#65279;</p>\r\n",
+    "PostedDate": "2011-03-15T11:53:11.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "581225",
+    "ThreadId": "249818",
+    "Html": "<p>Since it's the Microsoft VSTO runtime that's failing, which isn't something I control, I'm not sure there's much I can do. Can you try posting directly on the Microsoft VSTO forum here (<a href=\"http://social.msdn.microsoft.com/Forums/en-US/vsto/threads\">http://social.msdn.microsoft.com/Forums/en-US/vsto/threads</a>) to see if they can help?</p>",
+    "PostedDate": "2011-03-16T01:10:12.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "581472",
+    "ThreadId": "249818",
+    "Html": "\r\n<div>\r\n<p>Thanks. I will let you know if I get a working answer from the VSTO forum.</p>\r\n<p></p>\r\n</div>\r\n",
+    "PostedDate": "2011-03-16T08:12:49.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

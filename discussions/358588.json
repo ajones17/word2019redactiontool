@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "845554",
+    "ThreadId": "358588",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>When I try to run the installer I get a popup that is titled Track-It! Technician Client Setup. It wants to install ..</p>\r\n<p><strong>Technician Client Dependencies</strong></p>\r\n<p><strong>Prerequisites Check</strong></p>\r\n<p>If I click install I get an error message that it can't find a file.</p>\r\n<p>Is this correct or is the setup inadvertantly triggering the Track-It! installer as I do have Track-It! installed on my machine.</p>\r\n<p>Thanks,</p>\r\n<p>Joe</p>\r\n",
+    "PostedDate": "2012-06-06T07:48:41.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846289",
+    "ThreadId": "358588",
+    "Html": "<p>We've seen this once before - from&nbsp;what we learned that time, this&nbsp;means your Windows Installer state is corrupted somehow (all of the setup&nbsp;work is standard Windows Installer). Unfortunately, I'm not familiar with Windows Installer to suggest how you might fix it (the last user fixed himself once we figured this out, and never got back with details).</p>",
+    "PostedDate": "2012-06-07T16:13:43.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846670",
+    "ThreadId": "358588",
+    "Html": "<p>I may have been the previous user. &nbsp;I actually ran the Fixit solution to NO EFFECT. &nbsp;I abandoned trying to install the tool and just ended up making do with manual edits and work-arounds.</p>\r\n<p>I'm still suspicious that some of the files may be infected with some kind of malware. &nbsp;My windows installer being corrupted doesn't make a lot of sense when any other SW install I do seems to work normally.</p>",
+    "PostedDate": "2012-06-08T09:37:31.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

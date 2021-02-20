@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "496130",
+    "ThreadId": "227885",
+    "Html": "<p>Does the redaction tool work on a scanned/electronic document?</p>",
+    "PostedDate": "2010-09-20T11:25:17.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "496681",
+    "ThreadId": "227885",
+    "Html": "<p>It will work on any document that you can open/edit in Word, though if the page is just a single image, you'll only be able to redact the entire image (or nothing at all).</p>",
+    "PostedDate": "2010-09-21T12:53:21.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "559231",
+    "ThreadId": "227885",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>have the same problem with Word 2010 running on W7 - when installing I get the following error:</p>\r\n<p>&#65279;&#65279;&#65279;&#65279;&#65279;Specified cast is not valid.</p>\r\n<p>Details</p>\r\n<p>From File:&lt;&lt;temp path - redacted :) &gt;&gt;Word 2007 Redaction Tool.vsto</p>\r\n<p>************* Exception Text &#65279;&#65279;**************</p>\r\n<p>&#65279;System.InvalidCastException: Specified cast is not valid</p>\r\n<p>&nbsp; at</p>\r\n<p>Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.GetManifests(TimeSpan timeout)</p>\r\n<p>&nbsp; at</p>\r\n<p>&#65279;&#65279;&#65279;&#65279;Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.InstallAddIn()</p>\r\n<p>Regards</p>\r\n",
+    "PostedDate": "2011-02-02T01:42:15.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

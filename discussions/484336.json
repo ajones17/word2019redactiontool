@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1151970",
+    "ThreadId": "484336",
+    "Html": "I keep getting an error message upon installation that states that it can't install because I have a more recent version of internet explorer.  It states that I need IE8 to install.  Please help.<br />\n",
+    "PostedDate": "2014-01-10T16:00:43.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1155702",
+    "ThreadId": "484336",
+    "Html": "Can you include a screenshot of the error you're seeing? The installer has no dependency on IE, so it shouldn't care what browser you're using.<br />\n",
+    "PostedDate": "2014-01-11T17:29:41.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1156301",
+    "ThreadId": "484336",
+    "Html": "I just sent you a message.  Please disregard and see the posted screenshot.<br />\nAny input or guidance would be great!<br />\n<br />\n<img src=\"http://i306.photobucket.com/albums/nn258/crystalinaeclipse/IE8ERRORMSGADMIN.jpg\" alt=\"Image\" /><br />\n",
+    "PostedDate": "2014-01-11T21:27:29.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1164039",
+    "ThreadId": "484336",
+    "Html": "Thanks - do you see this right away when you run the download, or do you see other dialogs before this error?<br />\n",
+    "PostedDate": "2014-01-13T23:45:35.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1171469",
+    "ThreadId": "484336",
+    "Html": "That is the only dialog box that comes up.  <br />\n",
+    "PostedDate": "2014-01-16T14:49:15.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1174583",
+    "ThreadId": "484336",
+    "Html": "OK, thanks - I'm a little stumped because setup is the one thing that I don't write (it's generated automatically by Visual Studio). I'm asking around to see if anyone has seen this before and will let you know if I learn anything.<br />\n",
+    "PostedDate": "2014-01-17T11:23:44.877-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

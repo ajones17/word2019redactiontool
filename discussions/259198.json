@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "619118",
+    "ThreadId": "259198",
+    "Html": "\r\n<p>I am using Word 2010 (32 bit version) on a Windows 7 Home Premium PC (64 bit version).&nbsp; The redaction tool installs perfcetly, and all aspects except one are working.&nbsp; The one that is not is that the redaction symbol looks like a straight quote\r\n mark, not (as it should be) a black block.&nbsp; I tried deactivating all other add-ins, but that made no difference at all.&nbsp; I even tried uninstalling and reinstalling (version 1.2.0.1 is the one I have), again with no change in behaviour at all.</p>\r\n<p>While I like this tool very much, if it looks like this I will not be able to use it any more.</p>\r\n<p>Has anyone got any idea what has gone wrong or how I can fix this?</p>\r\n",
+    "PostedDate": "2011-05-27T00:00:00.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "620515",
+    "ThreadId": "259198",
+    "Html": "<p>Bruce,</p>\r\n<p>The redaction marks themselves are actually straight quotes, but marked as black text (and shaded black) so that they view/print/etc. as black bars&nbsp;- are you seeing the quotes in a color other than black? Are your system settings set to high contrast&nbsp;or something similar?</p>",
+    "PostedDate": "2011-05-30T18:29:32.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "620566",
+    "ThreadId": "259198",
+    "Html": "<p>I see the quotes only in black.&nbsp; I printed a page with redaction marks too, and that also comes out showing only the straight quotes.</p>\n<p>Contrast and brightness on my PC are adjusted using a sliding bar (left to right), and this is currently exactly in the middle in each case (the default settings - I have never needed to adjust them or any other colour or display settings).</p>",
+    "PostedDate": "2011-05-30T23:18:09.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "621595",
+    "ThreadId": "259198",
+    "Html": "<p>Does this happen on all of your documents, or just a particular one?</p>\r\n<p>It's interesting because the tool just uses standard Word formatting to do the redaction mark - in that document, if you select and region of text and apply a color from the color picker in the Paragraph group on the Home tab of the Ribbon, does that work? That mimics what the code does, and would help check if it's a broader issue.</p>",
+    "PostedDate": "2011-06-01T12:03:46.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "621871",
+    "ThreadId": "259198",
+    "Html": "<p>It happened on all my documents (past tense, thankfully).</p>\r\n<p>As soon as I applied the colour picker (once only) the add-in started to work the way it should.&nbsp; That is on more than one document, and after a re-boot of the PC.&nbsp; I have no idea what this is/was all about.</p>\r\n<p>I would never have stumbled on this for myself, so thank you for your help.</p>",
+    "PostedDate": "2011-06-02T01:47:10.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "622384",
+    "ThreadId": "259198",
+    "Html": "<p>Very strange - I'm glad we were able to solve it, though.</p>",
+    "PostedDate": "2011-06-03T01:08:19.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

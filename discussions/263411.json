@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "635410",
+    "ThreadId": "263411",
+    "Html": "<p>I keep getting support calls where at any given point, someone's redaction toolbar just stops showing up. The tool is still installed, and if I go to \"Word Options &gt; Add-Ins\" it shows as a disabled add-in. I try clicking the button to manage add-ins and  I check the box, restart word, and the problem persists. I uninstall it, delete every related registry key with the word 'redact' in it, delete every related file/folder with the word 'redact' in it, and then re-install it. The problem persists. So far the  only way I've found to make it work again is to create a whole new windows profile and install the redaction tool again. Eventually, the add-in becomes disabled even in the new profile. &nbsp;Office 2007 on XP Pro.</p>\n<p>&nbsp;</p>\n<p>I've also enabled all macros, added the subfolder the .vsto resides in to my trusted locations, enabled access to the VBA model, and basically removed any semblance of security from my Office instance. Still nothing.</p>",
+    "PostedDate": "2011-06-30T07:28:26.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636085",
+    "ThreadId": "263411",
+    "Html": "<p>Have you checked the application's Disabled Items list? Go to Word Options | Addins tab, and in the dropdown at the bottom, choose Disabled Items and hit Go - if the add-in is listed there, it will fail to load.</p>",
+    "PostedDate": "2011-07-01T09:33:20.293-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "638116",
+    "ThreadId": "263411",
+    "Html": "<p>That's exactly it. Thanks.</p>",
+    "PostedDate": "2011-07-06T06:43:26.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

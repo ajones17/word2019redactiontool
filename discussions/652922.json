@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1467981",
+    "ThreadId": "652922",
+    "Html": "Hello,\r<br />\n<br />\nInstallation failed with following message:\r<br />\n<br />\nComponent Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 has failed to install with the following error message:\r<br />\n&quot;Fatal error during installation. &quot;\r<br />\n<br />\nThe following components were successfully installed:<br />\n<ul>\n<li>\n.NET Framework Client Profile<br />\n</li>\n</ul>\nThe following components failed to install:<br />\n<ul>\n<li>\nVisual Studio Tools for the Office system 3.0 Runtime Service Pack 1<br />\n</li>\n</ul>\nSee the setup log file located at 'C:\\Users\\NHASAN~1\\AppData\\Local\\Temp\\VSD7D4B.tmp\\install.log' for more information.\r<br />\n<br />\nLog file indicated installer was unable to read registry values. \r<br />\n<br />\nIs the error due to the following?\r<br />\n <strong>Result of running operator 'ValueEqualTo' on property 'AdminUser' and value 'false': false&quot;</strong><br />\n",
+    "PostedDate": "2016-03-25T08:16:08.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

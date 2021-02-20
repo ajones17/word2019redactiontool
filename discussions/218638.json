@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "464379",
+    "ThreadId": "218638",
+    "Html": "<p>I installed the add-in and it works for me. But if another user logon to the same computer, he won't be able to see it unless he install it again under his profile. Is there a way that can make it available to all users? Thanks.</p>",
+    "PostedDate": "2010-07-07T09:46:28.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "464914",
+    "ThreadId": "218638",
+    "Html": "<p>To do this, you'd need to rework the installer to be MSI-based (vs. the ClickOnce solution I use), and follow the instructions here: <a href=\"http://blogs.msdn.com/b/vsto/archive/2010/03/08/deploying-your-vsto-add-ins-to-all-users-saurabh-bhatia.aspx\">http://blogs.msdn.com/b/vsto/archive/2010/03/08/deploying-your-vsto-add-ins-to-all-users-saurabh-bhatia.aspx</a>. Does that help?</p>",
+    "PostedDate": "2010-07-08T08:59:40.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

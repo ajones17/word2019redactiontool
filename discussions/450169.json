@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "1068946",
+    "ThreadId": "450169",
+    "Html": "Hello, I have been using this tool directly for many years and really appreciate how reliable and effective it is.  With the recent roll-out of Word 2013 can you please advise if a release that supports Word 2013 is planned?<br />\n",
+    "PostedDate": "2013-07-16T04:19:47.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1069678",
+    "ThreadId": "450169",
+    "Html": "Hi - Really glad to hear it's been working well for you! :)\r<br />\n<br />\nThe tool should work on Word 2013 with no changes; I didn't publish a new build because it would have simply changed the name. Are you running into trouble on Word 2013?<br />\n",
+    "PostedDate": "2013-07-17T12:09:56.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076544",
+    "ThreadId": "450169",
+    "Html": "I have, the add-on would not install. Any tips?<br />\n",
+    "PostedDate": "2013-08-04T16:46:12.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076856",
+    "ThreadId": "450169",
+    "Html": "Can you tell me what error you get? Does the install fail, or does it fail to load in Word itself?\r<br />\n<br />\nThanks!<br />\n",
+    "PostedDate": "2013-08-05T09:52:01.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076925",
+    "ThreadId": "450169",
+    "Html": "Install fails... Downloading file:///C:/User/jason/AppData/Local/Temp/WZSE.TMP/ApplicationFiles/Word 2007 Redaction Tool_1_2_0_1/Word 2007 Recaction\r<br />\nTool.dll.config.deploy did not succeed\r<br />\n<br />\nDetails: \r<br />\n<br />\nName: Word 2007 Redaction Tool\r<br />\nFrom: file:///C:/Users/jason/AppData/Local/Temp/WZSE3.TMP/Word 2007 Redaction Tool.vsto\r<br />\n<br />\n************** Exception Text **************\r<br />\nSystem.Deployment.Application.DeploymentDownloadException: Downloading file:///C:/Users/jason/AppData/Local/Temp/WZSE3.TMP/Application Files/Word 2007 Redaction Tool_1_2_0_1/Word 2007 Redaction Tool.dll.config.deploy did not succeed. ---&gt; System.Net.WebException: Could not find a part of the path 'C:\\Users\\jason\\AppData\\Local\\Temp\\WZSE3.TMP\\Application Files\\Word 2007 Redaction Tool_1_2_0_1\\Word 2007 Redaction Tool.dll.config.deploy'. ---&gt; System.Net.WebException: Could not find a part of the path 'C:\\Users\\jason\\AppData\\Local\\Temp\\WZSE3.TMP\\Application Files\\Word 2007 Redaction Tool_1_2_0_1\\Word 2007 Redaction Tool.dll.config.deploy'. ---&gt; System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\\Users\\jason\\AppData\\Local\\Temp\\WZSE3.TMP\\Application Files\\Word 2007 Redaction Tool_1_2_0_1\\Word 2007 Redaction Tool.dll.config.deploy'.\r<br />\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r<br />\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)\r<br />\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)\r<br />\n   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)\r<br />\n   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)\r<br />\n   --- End of inner exception stack trace ---\r<br />\n   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)\r<br />\n   at System.Net.FileWebRequest.GetResponseCallback(Object state)\r<br />\n   --- End of inner exception stack trace ---\r<br />\n   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)\r<br />\n   at System.Net.FileWebRequest.GetResponse()\r<br />\n   at System.Deployment.Application.SystemNetDownloader.DownloadSingleFile(DownloadQueueItem next)\r<br />\n   --- End of inner exception stack trace ---\r<br />\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.DownloadAddIn(TimeSpan timeout)\r<br />\n   at Microsoft.VisualStudio.Tools.Applications.Deployment.ClickOnceAddInDeploymentManager.InstallAddIn()<br />\n",
+    "PostedDate": "2013-08-05T13:20:31.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077490",
+    "ThreadId": "450169",
+    "Html": "Thanks - I've been trying to track down this setup error, but it's very intermittent. If you try it again, does it install correctly, or is it consistent for you?<br />\n",
+    "PostedDate": "2013-08-06T16:49:57.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077500",
+    "ThreadId": "450169",
+    "Html": "Thanks. No, I've tried to install it several times and it gives me the same error.<br />\n",
+    "PostedDate": "2013-08-06T17:48:07.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077591",
+    "ThreadId": "450169",
+    "Html": "OK, thanks - the frustrating thing is that this is the one place where I don't write any code directly (the installer is built automatically), so I'm not sure what I can do, but will keep poking around. I just tried it at home, and it failed the first time, but worked the second when I hit the Install button at the end as soon as I could after it showed up, so there may be a timing thing too if you want to try that. :)<br />\n",
+    "PostedDate": "2013-08-07T00:59:27.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077941",
+    "ThreadId": "450169",
+    "Html": "That worked. Thanks for your help. <br />\n",
+    "PostedDate": "2013-08-07T13:27:43.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

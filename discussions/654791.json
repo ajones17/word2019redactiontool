@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "1473844",
+    "ThreadId": "654791",
+    "Html": "After installation of the Tool no buttons appear on ribbon. Also at Option-&gt;Addons-&gt;COM-Add-Ins there is an information about some runtime error while loading (&quot;Laufzeitfehler während des Ladens&quot; in my German MS Office).\r<br />\n<img src=\"http://i.imgur.com/NoaspMp.png\" alt=\"Image\" />\r<br />\n<br />\nI am using an admin account, I have tried to turn off my antivirus and to reinstall both  .NET Framework 3.5 Service Pack 1 and VSTO 3.0 Runtime Service Pack 1 downloaded from Microsoft Webpage, but it didn't help. Do you have any clues what to do?<br />\n",
+    "PostedDate": "2016-05-18T09:20:00.123-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1474342",
+    "ThreadId": "654791",
+    "Html": "Interesting - I haven't seen this issue previously; is there anything in the Windows Event Log when you attempt to enable the add-in, by chance?<br />\n",
+    "PostedDate": "2016-05-25T18:15:57.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1474367",
+    "ThreadId": "654791",
+    "Html": "Nope, nothing suspicious found in the Windows Event Log. I have also tried to deselect few other Add-Ins I had in Word (they are visible on the above screenshot), but it didn't help either.<br />\n",
+    "PostedDate": "2016-05-26T03:27:34.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1474444",
+    "ThreadId": "654791",
+    "Html": "OK, thanks. Does this happen on only one PC, or multiple machines? Can you try repairing the VSTO runtime installation?<br />\n",
+    "PostedDate": "2016-05-26T15:04:41.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1474834",
+    "ThreadId": "654791",
+    "Html": "Sorry for late reply, was really busy last week. The problem arises also on another PC in the office with identical hardware and software environment (Windows 7, MS Office 2013 on both). On my home PC (Windows 10, MS Office 2010) the Tool functions flawless.\r<br />\nRepairing the VSTO runtime installation didn't help.<br />\n",
+    "PostedDate": "2016-06-01T12:15:40.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1475147",
+    "ThreadId": "654791",
+    "Html": "What versions of the .NET Runtime are on each of those machines? (Apologies - I haven't seen this error before, so trying to triangulate what might be going wrong, since the loading of the add-in is all vanilla VSTO capabilities).<br />\n",
+    "PostedDate": "2016-06-05T18:34:13.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1475171",
+    "ThreadId": "654791",
+    "Html": "And what is the best way to check the .NET Runtime versions? I could find that I have the 3.5.1 one (see the screenshot from the &quot;Turn Windows features on or off&quot; applet). Another PC has it as well.<br />\n<img src=\"http://i.imgur.com/RyP7e37.png\" alt=\"Image\" /><br />\n",
+    "PostedDate": "2016-06-06T01:37:56.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1475176",
+    "ThreadId": "654791",
+    "Html": "If you have Visual Studio installed, clrver should do it: <a href=\"https://msdn.microsoft.com/en-us/library/ff427522(v=vs.110).aspx\" rel=\"nofollow\">https://msdn.microsoft.com/en-us/library/ff427522(v=vs.110).aspx</a><br />\n",
+    "PostedDate": "2016-06-06T01:56:42.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

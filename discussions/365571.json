@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "863853",
+    "ThreadId": "365571",
+    "Html": "\r\n<p>Is there a new version being released specifically for Office 2010 ?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>\r\n",
+    "PostedDate": "2012-07-13T02:04:08.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "867067",
+    "ThreadId": "365571",
+    "Html": "<p>Hi sportal,</p>\r\n<p>The current version supports both Word 2007 and Word 2010 - although the name specifically says \"Word 2007\", you should have no problems running it on 2010.</p>",
+    "PostedDate": "2012-07-14T16:33:23.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

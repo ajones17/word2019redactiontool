@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "615211",
+    "ThreadId": "258243",
+    "Html": "\r\n<p>I've installed the Word 2007 redaction tool on a Windows 7 64 bit Pro laptop with Office 2010 Pro. I have a domain admin account that I used to run the setup. When I login as a standard user and open Word there is no 'Mark' group to mark the text for redaction.</p>\r\n",
+    "PostedDate": "2011-05-19T06:51:43.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "616050",
+    "ThreadId": "258243",
+    "Html": "<p>Is the add-in actually loading? If you go to File | Options | Add-Ins, is it listed under Active or Inactive Application Add-ins?</p>",
+    "PostedDate": "2011-05-20T12:46:34.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "659043",
+    "ThreadId": "258243",
+    "Html": "<p>I have the same problem but I am using Windows XP with Office 2010 Pro. &nbsp;The add-in is listed in the active add-ins but the file location it lists is in my temp directory and it doesn't exist.</p>",
+    "PostedDate": "2011-08-16T13:02:51.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "659530",
+    "ThreadId": "258243",
+    "Html": "<p>Is your situation similarly that you installed as one user, and are trying to run the application as another user? Or is this all the same account?</p>",
+    "PostedDate": "2011-08-17T10:27:45.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "659531",
+    "ThreadId": "258243",
+    "Html": "This is all the same account with admin rights.",
+    "PostedDate": "2011-08-17T10:29:04.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "660055",
+    "ThreadId": "258243",
+    "Html": "<p>Interesting - that's really strange. If the item is listed in Active Application Adding, that should mean that Word loaded it successfully.</p>\r\n<p>if you click on the down arrow next to the QAT (the save and undo buttons in the top left corner), choose Customize the Ribbon, then switch the drop-down on the dialog to \"All Commands\", does the mark button, or the Redacted Document button show up in the list?</p>",
+    "PostedDate": "2011-08-18T08:01:06.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "701524",
+    "ThreadId": "258243",
+    "Html": "<p>The installer has mysteriously installed Nemo Documents on my computer rather than the redaction tool. &nbsp;What is going on? &nbsp;This is very blackhat behavior...&nbsp;</p>",
+    "PostedDate": "2011-11-21T15:02:37.947-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "702054",
+    "ThreadId": "258243",
+    "Html": "<p>I've not heard of Nemo Documents before this email, so I can promise you it has nothing to do with the installer for this tool. :)</p>\r\n<p>Very likely, there's a problem with the Windows Installer engine on your PC - you may want to check out their troubleshooter (here: <a href=\"http://support.microsoft.com/kb/2438651/\">http://support.microsoft.com/kb/2438651/</a>) though I've never used it, so you'll want to read up to see if you're comfortable using it first.</p>",
+    "PostedDate": "2011-11-22T15:23:30.333-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "702066",
+    "ThreadId": "258243",
+    "Html": "tristand,\r\n<div><br>\r\n</div>\r\n<div>The file I download from this address:<a href=\"http://download.codeplex.com/Download?ProjectName=redaction&DownloadId=115605&FileTime=129150689469070000&Build=18301\">http://download.codeplex.com/Download?ProjectName=redaction&DownloadId=115605&FileTime=129150689469070000&Build=18301</a></div>\r\n<div><br>\r\n</div>\r\n<div>says it is the Word 2007 Redaction Tool Installer, but when it asks where I want to install the program it actually installs Nemo Documents. Could the Codeplex link be incorrect or corrupted? The odd thing is that the initial screens of the installer are\r\n labelled Word 2007 Redaction Tool Installer.</div>\r\n<div><br>\r\n</div>\r\n<div>Please see the attached images.</div>\r\n<div><br>\r\n</div>\r\n<div>Regards,</div>\r\n<div>Russ<br>\r\n<br>\r\n<div>On Tue, Nov 22, 2011 at 3:23 PM, tristand <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: tristand</p>\r\n<div>\r\n<p>I've not heard of Nemo Documents before this email, so I can promise you it has nothing to do with the installer for this tool. :)</p>\r\n<p>Very likely, there's a problem with the Windows Installer engine on your PC - you may want to check out their troubleshooter (here:\r\n<a href=\"http://support.microsoft.com/kb/2438651/\" target=\"_blank\">http://support.microsoft.com/kb/2438651/</a>) though I've never used it, so you'll want to read up to see if you're comfortable using it first.</p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://redaction.codeplex.com/discussions/258243#post702054\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:redaction@discussions.codeplex.com?subject=[redaction:258243]\" target=\"_blank\">redaction@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:redaction@discussions.codeplex.com\" target=\"_blank\">\r\nredaction@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://redaction.codeplex.com/discussions/258243/unsubscribe/\" target=\"_blank\">\r\nunsubscribe</a> on CodePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n</div>\r\n",
+    "PostedDate": "2011-11-22T15:55:56.24-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "703712",
+    "ThreadId": "258243",
+    "Html": "<p>I double-checked from a few locations, and the installer itself is fine; I'm guessing that your Windows Installer engine is corrupted - did you check out the link above?</p>",
+    "PostedDate": "2011-11-26T13:33:52.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "947909",
+    "ThreadId": "258243",
+    "Html": "\r\n<blockquote style=\"padding-bottom:0px; font-style:italic; margin:0.25em 1em 0px; padding-left:0.25em; padding-right:0.25em; padding-top:0px; border:#ccc 0.1em solid\">\r\n<strong>tristand wrote:</strong><br>\r\n<p>Is the add-in actually loading? If you go to File | Options | Add-Ins, is it listed under Active or Inactive Application Add-ins?</p>\r\n</blockquote>\r\n<p><br>\r\nHi Tristan,</p>\r\n<p>I'm having this exact problem as well.&nbsp; I installed the Word 2007 Redaction Tool on Windows 7 using a domain administrator account, but when I log on to the same workstation as a standard user, the redaction group does not appear in the Review ribbon in\r\n Word 2010.&nbsp; When I go to File --&gt; Options --&gt; Add-ins I do see the redaction tool listed, but it doesn't say whether it's active or inactive.&nbsp; If I click on the redaction tool in the list of add-ins, it displays some detail information including the location\r\n of the VSTO file, which it says is in a temp file in the C:/Users/ folder for the domain administrator account.</p>\r\n<p>When I ran the install using the domain administrator account, the installation program gave me no option to install the redaction tool for all users or a specific user -- it just went ahead and installed itself under the domain administrator.&nbsp; It looks\r\n like only the domain administrator account can see it -- no other user who logs on to the workstation can.</p>\r\n<p>Any ideas would be most appreciated as my users move offices and change workstations quite frequently.</p>\r\n<p>Thanks in advance!</p>\r\n<p>Chris.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-11-27T12:14:12.053-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

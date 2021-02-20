@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1061227",
+    "ThreadId": "448235",
+    "Html": "Hi,\r<br />\n<br />\nis it possible to localize the addin in a simple way? Otherwise, I would be happy to help adding a German version.\r<br />\n<br />\nBest wishes\r<br />\nMichael<br />\n",
+    "PostedDate": "2013-06-25T23:12:11.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1061475",
+    "ThreadId": "448235",
+    "Html": "Yes, definitely - the project is set up such that every string is in a resource file, so updating those should be all you need to do. I've never done localization in VS before, but if you have, it should just work. :)<br />\n",
+    "PostedDate": "2013-06-26T07:46:00.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1070399",
+    "ThreadId": "448235",
+    "Html": "I uploaded the German resx files under Source Code :: Patches. Feel free to use them, with pleasure....\r<br />\n<br />\nBest wishes\r<br />\nMichael<br />\n",
+    "PostedDate": "2013-07-19T02:32:43.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "1070401",
+    "ThreadId": "450567",
+    "Html": "Hi,\r<br />\n<br />\nis it possible to provide an installation package (msi) that does not load the necessary files (dependencies) from the internet, but includes them in the install package?\r<br />\n<br />\nBackground: In our company, only administrators may install programs, but for security reasons, they don't have internet access. Therefore it is simply impossible to install the package, even if all the components are installed, the setup procedure tries to connect to the internet and as it fails it does not install.\r<br />\n<br />\nBest wishes\r<br />\nMichael<br />\n",
+    "PostedDate": "2013-07-19T02:38:10.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1070996",
+    "ThreadId": "450567",
+    "Html": "I think that you could easily edit the setup project to tell it to not to download any of the prerequisites and recompile; that would mean that they would all need to be installed already though. You should be able to include them all inline as well, though I've never worked enough with the installer logic to know how to do it.<br />\n",
+    "PostedDate": "2013-07-21T11:04:20.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1126807",
+    "ThreadId": "450567",
+    "Html": "We're having a problem with installing the redaction tool on our PC's.  We're currently using Office 2010 and when I try to download the redaction tool, It starts installing it and asks me to agree to a couple of questions.  It then says that an error occurred and that the program can't complete the installation.  Please send recommendations to fix this error.  I think the program is trying to phone home and we have proxy firewall settings that aren't allowing it to do so.  Is there a way to get the complete program to install without it needing to phone home?  I appreciate any help in this matter.<br />\n",
+    "PostedDate": "2013-11-19T15:57:47.56-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1126909",
+    "ThreadId": "450567",
+    "Html": "Danny,\r<br />\n<br />\nit is not &quot;phoning home&quot;, but there are some requirements for this program, and it tries to download these and install them as well. It took me a while to find out how to do it, best way is to download the source code and add a Setup Project in Visual Studio that does not check the requirements so you can set it up after you are sure you have installed all of them. These are:<br />\n<ul>\n<li>MS .Net Framework 3.5 SP1</li>\n<li>Visual Studio Tools for Office 4.0</li>\n<li>\nWindows Installer 3.1<br />\n</li>\n</ul>\nI changed a bit more (because I localized the project to German), so it is possible that my setup package is not useful for you. If you don't have experience with Visual Studio and how to modify this project, send me a personal message (just click my name on the left side, and then click the Contact link on the page).\r<br />\n<br />\nBest wishes\r<br />\nMichael<br />\n",
+    "PostedDate": "2013-11-19T22:56:55.02-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1287515",
+    "ThreadId": "450567",
+    "Html": "Hi Mikel,\r<br />\n<br />\nWould you be able to help me how to recompile this as an msi package in Visual Studio please? Also the current setup is only works for current user and wanting to know how can this be done for all users?\r<br />\n<br />\nThanks.\r<br />\n<br />\nRegards,\r<br />\nPrabs<br />\n",
+    "PostedDate": "2014-08-07T03:35:44.083-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1287714",
+    "ThreadId": "450567",
+    "Html": "I am on holydays atm, will be back next week and try to help you then.\r<br />\n<br />\nBest wishes\r<br />\nMichael<br />\n",
+    "PostedDate": "2014-08-07T11:33:42.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1289545",
+    "ThreadId": "450567",
+    "Html": "Hi,<br />\n<br />\nhere is what you have to do: Download the source files (from <a href=\"https://redaction.codeplex.com/SourceControl/latest\" rel=\"nofollow\">here</a>) and unzip the file to any folder on your hard disk. Then start Visual Studio, select File :: Open Project... and open the file &quot;Word2007RedactionTool.sln&quot; from ~\\Word2007RedactionTool (~ = the folder where you unzipped the source code). For the first time this lasts a while as VS is trying to connect to the CodePlex Source Control and is not able to and gives you some error messages about this fact, or it might ask you for a username and password. Confirm the change to Offline Mode when the message appears.<br />\n<br />\nWhen you use a newer version of VS than VS 2008, a conversion wizard appears. You might just confirm every step (but in my eyes it is not necessary to create a backup).<br />\n<br />\nThen, go to File :: Source Control :: Change Source Control (this might be different, I use a German version of VS, so please look for what it could be). Confirm that you want to remove source control.<br />\n<br />\nNext follow <a href=\"http://msdn.microsoft.com/en-us/library/vstudio/19x10e5c(v=vs.100).aspx\" rel=\"nofollow\">these steps</a> to create a Setup project. Read <a href=\"http://msdn.microsoft.com/en-us/library/vstudio/8z1sw3kx(v=vs.100).aspx\" rel=\"nofollow\">here</a> about how to Set Deployment Project Properties and <a href=\"http://msdn.microsoft.com/en-us/library/vstudio/z11b431t(v=vs.100).aspx\" rel=\"nofollow\">here</a> about how to add items to a deployment project. You might as well remove some items, but the most important part is that you choose the option &quot;Load required components from the same place as the application&quot; (or whatever it is, as I said, I use a German VS) - right click the Setup project, choose Properties and click the button &quot;Required components...&quot;<br />\n<br />\nThen compile the solution and you should find an msi file in the appropriate folder (YourSetupProjectFolder\\bin\\debug or release).<br />\n<br />\nMake sure to install the components mentioned above before you start the setup for this tool, and everything should work fine (please don't test too less times!).<br />\n<br />\nBest wishes<br />\nMichael<br />\n",
+    "PostedDate": "2014-08-12T22:59:06.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1290489",
+    "ThreadId": "450567",
+    "Html": "Thanks Maikl,\r<br />\n<br />\nI am getting some error message during the build process, I guess this is something to do with office 2007 not installed on the machine.\r<br />\n<br />\nI will install 2007 and let you know how it went.\r<br />\n<br />\nThank for you help.\r<br />\n<br />\nRegards,\r<br />\nPrabs<br />\n",
+    "PostedDate": "2014-08-15T08:44:42.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1291019",
+    "ThreadId": "450567",
+    "Html": "Hi Maikl,\r<br />\n<br />\nI am getting following error message during the build, any suggestion? Thank you.\r<br />\n<br />\nRegards,\r<br />\nPrabs\r<br />\n<br />\nError\t1\tThe &quot;FindRibbons&quot; task failed unexpectedly.\r<br />\nSystem.IO.FileNotFoundException: Could not load file or assembly 'Word 2007 Redaction Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4cee9d6b34c5f24' or one of its dependencies. The system cannot find the file specified.\r<br />\nFile name: 'Word 2007 Redaction Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4cee9d6b34c5f24'\r<br />\n<br />\nServer stack trace: \r<br />\n   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)\r<br />\n   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)\r<br />\n   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)\r<br />\n   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)\r<br />\n   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, Boolean forIntrospection)\r<br />\n   at System.Reflection.Assembly.Load(String assemblyString)\r<br />\n   at System.UnitySerializationHolder.GetRealObject(StreamingContext context)\r<br />\n   at System.Runtime.Serialization.ObjectManager.ResolveObjectReference(ObjectHolder holder)\r<br />\n   at System.Runtime.Serialization.ObjectManager.DoFixups()\r<br />\n   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)\r<br />\n   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)\r<br />\n   at System.Runtime.Remoting.Channels.CrossAppDomainSerializer.DeserializeObject(MemoryStream stm)\r<br />\n   at System.Runtime.Remoting.Messaging.SmuggledMethodReturnMessage.FixupForNewAppDomain()\r<br />\n   at System.Runtime.Remoting.Channels.CrossAppDomainSink.SyncProcessMessage(IMessage reqMsg)\r<br />\n<br />\nException rethrown at [0]: \r<br />\n   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)\r<br />\n   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)\r<br />\n   at Microsoft.Build.Framework.ITask.Execute()\r<br />\n   at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute()\r<br />\n   at Microsoft.Build.BackEnd.TaskBuilder.&lt;ExecuteInstantiatedTask&gt;d__20.MoveNext()\r<br />\n<br />\nWRN: Assembly binding logging is turned OFF.\r<br />\nTo enable assembly bind failure logging, set the registry value [HKLM\\Software\\Microsoft\\Fusion!EnableLog] (DWORD) to 1.\r<br />\nNote: There is some performance penalty associated with assembly bind failure logging.\r<br />\nTo turn this feature off, remove the registry value [HKLM\\Software\\Microsoft\\Fusion!EnableLog].<br />\n<pre><code>Word2007RedactionTool</code></pre>\n\n",
+    "PostedDate": "2014-08-18T05:15:53.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1291296",
+    "ThreadId": "450567",
+    "Html": "Hi Maikl, \r<br />\n<br />\nI am getting following error message during the build, any suggestion? Thank you. \r<br />\n<br />\nRegards, \r<br />\nPrabs \r<br />\n<br />\nError 1 The &quot;FindRibbons&quot; task failed unexpectedly. \r<br />\nSystem.IO.FileNotFoundException: Could not load file or assembly 'Word 2007 Redaction Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4cee9d6b34c5f24' or one of its dependencies. The system cannot find the file specified. \r<br />\nFile name: 'Word 2007 Redaction Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4cee9d6b34c5f24' \r<br />\n<br />\nServer stack trace: \r<br />\nat System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks) \r<br />\nat System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks) \r<br />\nat System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks) \r<br />\nat System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection) \r<br />\nat System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, Boolean forIntrospection) \r<br />\nat System.Reflection.Assembly.Load(String assemblyString) \r<br />\nat System.UnitySerializationHolder.GetRealObject(StreamingContext context) \r<br />\nat System.Runtime.Serialization.ObjectManager.ResolveObjectReference(ObjectHolder holder) \r<br />\nat System.Runtime.Serialization.ObjectManager.DoFixups() \r<br />\nat System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage) \r<br />\nat System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage) \r<br />\nat System.Runtime.Remoting.Channels.CrossAppDomainSerializer.DeserializeObject(MemoryStream stm) \r<br />\nat System.Runtime.Remoting.Messaging.SmuggledMethodReturnMessage.FixupForNewAppDomain() \r<br />\nat System.Runtime.Remoting.Channels.CrossAppDomainSink.SyncProcessMessage(IMessage reqMsg) \r<br />\n<br />\nException rethrown at [0]: \r<br />\nat System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg) \r<br />\nat System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type) \r<br />\nat Microsoft.Build.Framework.ITask.Execute() \r<br />\nat Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute() \r<br />\nat Microsoft.Build.BackEnd.TaskBuilder.&lt;ExecuteInstantiatedTask&gt;d__20.MoveNext() \r<br />\n<br />\nWRN: Assembly binding logging is turned OFF. \r<br />\nTo enable assembly bind failure logging, set the registry value [HKLM\\Software\\Microsoft\\Fusion!EnableLog] (DWORD) to 1.\r<br />\nNote: There is some performance penalty associated with assembly bind failure logging. \r<br />\nTo turn this feature off, remove the registry value [HKLM\\Software\\Microsoft\\Fusion!EnableLog].<br />\n",
+    "PostedDate": "2014-08-19T03:53:00.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

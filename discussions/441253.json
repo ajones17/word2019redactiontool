@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1034357",
+    "ThreadId": "441253",
+    "Html": "Hi,\r<br />\n<br />\nwe have Word 2007/2010 Redaction Tool 1.2 installed on multiple computers. On some computers does not work, then mark the text,click redact and an display error &quot;An Error was Encountered while redacting este documento&quot; and does not open the new document.\r<br />\n<br />\nWe have reviewed the differences between a computer that does not work and one that works fine. I can not find differences... are the same versions. NET framework, Visual Studio and Word 2007.\r<br />\n<br />\nAnyone know what I can do to fix the problem?<br />\n",
+    "PostedDate": "2013-04-23T00:38:45.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1040137",
+    "ThreadId": "441253",
+    "Html": "Does the same document work on one PC and fail on another? On the PC with the issue, do all documents fail to redact?<br />\n",
+    "PostedDate": "2013-05-06T15:50:10.257-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1040262",
+    "ThreadId": "441253",
+    "Html": "All documents are new. Yes all documents fail to redact in PC with the issue :(\r<br />\n<br />\nThanxs tristand<br />\n",
+    "PostedDate": "2013-05-07T01:22:53.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1041179",
+    "ThreadId": "441253",
+    "Html": "Interesting - I'm a little stumped. Are there other addins installed on the problematic machine? Have you tried reinstalling the add-in?<br />\n",
+    "PostedDate": "2013-05-08T20:39:35.343-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1043446",
+    "ThreadId": "441253",
+    "Html": "Hi tristand,\r<br />\n<br />\nthanxs for your help. I didn't tell my system configuration.\r<br />\n<br />\nAll computers tested are Windows XP SP3 and Office 2007 SP3. Yes the machines have other addins (clicktocall, abbyy finereader and microsoft lync), but all machines have these addins and ones works fine.\r<br />\n<br />\nI had long time been the problem, so I've given implosible. thanks anyway tristand.<br />\n",
+    "PostedDate": "2013-05-14T09:08:33.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1246794",
+    "ThreadId": "441253",
+    "Html": "Well, it seems to me that this <a href=\"http://www.yiigo.com/guides/vbnet/how-to-read-word.shtml\" rel=\"nofollow\">Word library</a> supports Word 2007 and later versions, so 2013 might be included as well.\r<br />\n<br />\nCheers\r<br />\nDerek<br />\n",
+    "PostedDate": "2014-05-18T20:09:58.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

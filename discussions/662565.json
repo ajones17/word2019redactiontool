@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1495526",
+    "ThreadId": "662565",
+    "Html": "I use Word 2016 on Windows 10 and the add-on works great except that it removes internal hyperlinks. So the table of contents or cross references within the document are lost. This is a shame since it's very handy when reading the document on the screen. External hyperlinks continue to work.<br />\n<br />\nI assume it could be related to the removal of field codes in the latest version. Could this be made optional? I Penny distribute PDFs so the field codes are eventually gone anyways.<br />\n<br />\nUpdate: I could verify that version 1.1 doesn't have that limitation. I'm working with 1.1 now for the time being.<br />\n",
+    "PostedDate": "2017-04-16T13:44:03.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

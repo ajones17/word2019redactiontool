@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1346967",
+    "ThreadId": "578863",
+    "Html": "Hello, does this tool supports on Windows Server 2008 R2 terminal services with Word 2010?\r<br />\nI installed it on the administrator session and it installed the addin under appdata\\local\\temp folder. I tried to search for the .vsto on c: or but can't find it.\r<br />\nI was thinking may be able to install it with a logon script with VSTOInstaller.exe /install, but since I can't find the .vsto file so I don't know how to do it<br />\n",
+    "PostedDate": "2015-01-28T18:17:05.98-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
