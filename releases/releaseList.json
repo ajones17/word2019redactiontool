@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "0",
+    "Name": "Version 1.1",
+    "DevelopmentStatus": "Stable",
+    "Description": "A minor update to the Word 2007 Redaction Tool. This version can be installed directly over any existing version.\n!!!! Updates to Version 1.1\n* Fixed bugs:\n** Pictures in the header could cause redaction to hang, Find and Mark to fail to find, or Unmark All to fail to complete\n** Merged table cells could cause redaction to fail\n** Find Next fails to progress if the last redaction mark is in the last cell of a table in the last paragraph of the document\n* Preventative update to ensure that no error can cause redaction to hang\n!!!! Prerequisites\nThe following items are required:\n* The .NET Framework 3.5 Service Pack 1\n* The VSTO 3.0 Runtime Service Pack 1\nIf either of these items are not installed, Setup will download and install them automatically, *but a reboot may be required*.\n!!!! Important Notes\n* *+This add-in is not officially supported by Microsoft+*; however, the source code is available so it can be viewed and modified (please consult the [url:License|http://www.codeplex.com/redaction/license] tab if you have any questions on licensing).\n* We recommend that you carefully review any documents redacted using this tool to confirm that all the information that you intended to redact was successfully redacted. ",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-09-09T01:20:49.627-07:00",
+    "Files": [
+      {
+        "Id": "1f363f32-1c28-4406-9128-aef688b38d1d",
+        "FileName": "Word2007RedactionTool.exe",
+        "Url": "./0/1f363f32-1c28-4406-9128-aef688b38d1d",
+        "Type": "Application",
+        "UploadDate": "2009-09-09T01:20:49.207-07:00"
+      },
+      {
+        "Id": "d417a401-eaa7-453e-92f7-76f5725b9ad0",
+        "FileName": "UsersGuide.pdf",
+        "Url": "./0/d417a401-eaa7-453e-92f7-76f5725b9ad0",
+        "Type": "Application",
+        "UploadDate": "2009-08-31T22:57:03.513-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "Version 1.0",
+    "DevelopmentStatus": "None",
+    "Description": "The initial release of the Word 2007 Redaction Tool. This version can be installed directly over the Beta (if you have it).\n!!!! New to Version 1.0\n* Find and Mark - allows for all instances of a specific string to be marked at once\n* Various bug fixes\n!!!! Prerequisites\nThe following items are required:\n* The .NET Framework 3.5 Service Pack 1\n* The VSTO 3.0 Runtime Service Pack 1\nIf either of these items are not installed, Setup will download and install them automatically, *but a reboot may be required*.\n!!!! Important Notes\n* *+This add-in is not officially supported by Microsoft+*; however, the source code is available so it can be viewed and modified (please consult the [url:License|http://www.codeplex.com/redaction/license] tab if you have any questions on licensing).\n* We recommend that you carefully review any documents redacted using this tool to confirm that all the information that you intended to redact was successfully redacted. \n",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-10-10T17:34:40.273-07:00",
+    "Files": [
+      {
+        "Id": "d8d0b821-d3b9-4d33-b57e-aaf22731eb5f",
+        "FileName": "Word2007RedactionTool.exe",
+        "Url": "./1/d8d0b821-d3b9-4d33-b57e-aaf22731eb5f",
+        "Type": "Application",
+        "UploadDate": "2008-10-09T18:44:13.903-07:00"
+      },
+      {
+        "Id": "609dcc89-7edd-4267-8a96-e55b7b545067",
+        "FileName": "UsersGuide.pdf",
+        "Url": "./1/609dcc89-7edd-4267-8a96-e55b7b545067",
+        "Type": "Documentation",
+        "UploadDate": "2008-10-01T23:45:07.277-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "Version 0.9 (beta)",
+    "DevelopmentStatus": "Beta",
+    "Description": "The initial beta release of the Word 2007 Redaction Tool. This release is functionally complete and Setup should work, but might still have a couple rough edges.\n!!!! Prerequisites\nThe following items are required:\n* The .NET Framework 3.5 Service Pack 1\n* The VSTO 3.0 Runtime Service Pack 1\nIf either of these items are not installed, Setup will download and install them automatically, *but a reboot may be required*.\n!!!! Important Notes\n* *+This add-in is not officially supported by Microsoft+*; however, the source code is available so it can be viewed and modified (please consult the [url:License|http://www.codeplex.com/redaction/license] tab if you have any questions on licensing).\n* We recommend that you carefully review any documents redacted using this tool to confirm that all the information that you intended to redact was successfully redacted. \n",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-02-03T22:07:08.86-08:00",
+    "Files": [
+      {
+        "Id": "80455a5c-eb58-4359-bbc1-a0fd7fd8abfe",
+        "FileName": "UsersGuide.pdf",
+        "Url": "./2/80455a5c-eb58-4359-bbc1-a0fd7fd8abfe",
+        "Type": "Documentation",
+        "UploadDate": "2008-09-17T00:01:48.023-07:00"
+      },
+      {
+        "Id": "4b55987f-46de-4e48-b55a-193e65b1dc4f",
+        "FileName": "RedactionToolSetup.exe",
+        "Url": "./2/4b55987f-46de-4e48-b55a-193e65b1dc4f",
+        "Type": "Application",
+        "UploadDate": "2008-09-16T20:30:30.247-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "Version 1.2",
+    "DevelopmentStatus": "Stable",
+    "Description": "A minor update to the Word 2007 Redaction Tool. This version can be installed directly over any existing version.\n!!!! Updates to Version 1.2\n* Fixed bugs:\n** Documents with \"Update styles to match template\" change formatting when redacted\n** Field codes should be removed from redacted documents\n* Updated redaction formatting to use text highlighting instead of background shading\n!!!! Prerequisites\nThe following items are required:\n* The .NET Framework 3.5 Service Pack 1\n* The VSTO 3.0 Runtime Service Pack 1\nIf either of these items are not installed, Setup will download and install them automatically, *but a reboot may be required*.\n!!!! Important Notes\n* *+This add-in is not officially supported by Microsoft+*; however, the source code is available so it can be viewed and modified (please consult the [url:License|http://www.codeplex.com/redaction/license] tab if you have any questions on licensing).\n* We recommend that you carefully review any documents redacted using this tool to confirm that all the information that you intended to redact was successfully redacted.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-24T12:41:40.607-07:00",
+    "Files": [
+      {
+        "Id": "07782c51-e6b2-47d3-a0d5-7ebf6a257b4b",
+        "FileName": "Word2007RedactionTool.exe",
+        "Url": "./3/07782c51-e6b2-47d3-a0d5-7ebf6a257b4b",
+        "Type": "Application",
+        "UploadDate": "2010-04-06T16:09:06.907-07:00"
+      },
+      {
+        "Id": "24200ed4-2805-4048-bad5-8e3977d624f9",
+        "FileName": "UsersGuide.pdf",
+        "Url": "./3/24200ed4-2805-4048-bad5-8e3977d624f9",
+        "Type": "Documentation",
+        "UploadDate": "2010-05-19T22:38:36.88-07:00"
+      }
+    ]
+  }
+]
