@@ -1,0 +1,22 @@
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Word 2007 Redaction Tool.dll.config
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Word 2007 Redaction Tool.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Word 2007 Redaction Tool.pdb
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Word 2007 Redaction Tool.dll.manifest
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Word 2007 Redaction Tool.vsto
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.Office.Tools.Common.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.Office.Tools.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.Office.Tools.Word.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.Office.Tools.Word.v4.0.Utilities.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.csprojAssemblyReference.cache
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.Properties.Resources.resources
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.FormDoRedaction.resources
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.FormSuccess.resources
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.FormFindAndMark.resources
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.csproj.GenerateResource.cache
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.csproj.CoreCompileInputs.cache
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word2007RedactionTool.csproj.CopyComplete
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word 2007 Redaction Tool.dll
+C:\Users\andrea\Documents\Visual Studio 2017\redaction\64-bit\sourceCode\sourceCode\Word2007RedactionTool\obj\Debug\Word 2007 Redaction Tool.pdb
